@@ -1,8 +1,553 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<main id="body-inner">
+    <div id="page-transition">
+        <div class="ptr-overlay"></div>
+        <div class="ptr-preloader">
+            <div class="ptr-prel-content">
+                <img src="assets/img/logo-light.png" class="ptr-prel-image tt-logo-light" alt="Logo">
+            </div> <!-- /.ptr-prel-content -->
+        </div> <!-- /.ptr-preloader -->
+    </div>
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <div class="bg-noise"></div>
+    <div id="scroll-container">
+        <header id="tt-header" class="tt-header-fixed">
+            <div class="tt-header-inner">
+                <div class="tt-header-col">
+                    <div class="tt-logo">
+                        <a href="index-2.html">
+                            <img src="assets/img/logoremove.png" style="width:100px; height:100px" class="tt-logo-light magnetic-item" alt="Logo"> <!-- logo light -->
+                            <img src="assets/img/logoremove.png" style="width:100px; height:100px" class="tt-logo-dark magnetic-item" alt="Logo"> <!-- logo dark -->
+                        </a>
+                    </div>
+                </div>
+                <div class="tt-header-col">
+                    <div id="tt-ol-menu-toggle-btn-wrap">
+                        <div class="tt-ol-menu-toggle-btn-text">
+                            <span class="text-menu" data-hover="Open">Menu</span>
+                            <span class="text-close">Close</span>
+                        </div>
+                        <div class="tt-ol-menu-toggle-btn-holder">
+                            <a href="#" class="tt-ol-menu-toggle-btn magnetic-item"><span></span></a>
+                        </div>
+                    </div>
+                    <nav class="tt-overlay-menu tt-ol-menu-center tt-ol-menu-count">
+                        <div class="tt-ol-menu-holder">
+                            <div class="tt-ol-menu-inner tt-wrap">
+                                <div class="tt-ol-menu-content">
+                                    <ul class="tt-ol-menu-list">
+                                        <li class="tt-ol-submenu-wrap">
+                                            <div class="tt-ol-submenu-trigger">
+                                                <a href="#">Home</a>
+                                                <div class="tt-ol-submenu-caret-wrap">
+                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                            </div> <!-- /.tt-ol-submenu-trigger -->
+                                            <div class="tt-ol-submenu">
+                                                <ul class="tt-ol-submenu-list">
+
+                                                    <li><a href="landing-page-1.html">Landing Page v.1</a></li>
+                                                    <li><a href="landing-page-2.html">Landing Page v.2</a></li>
+
+                                                </ul> <!-- /.tt-ol-submenu-list -->
+                                            </div> <!-- /.tt-ol-submenu -->
+                                        </li>
+                                        <!-- End submenu (sub-master) -->
+                                        <!-- Begin submenu (submenu master)
+                                        ==================================== -->
+                                        <li class="tt-ol-submenu-wrap active">
+                                            <div class="tt-ol-submenu-trigger">
+                                                <a href="#">Portfolio</a>
+                                                <div class="tt-ol-submenu-caret-wrap">
+                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                            </div> <!-- /.tt-ol-submenu-trigger -->
+                                            <div class="tt-ol-submenu">
+                                                <ul class="tt-ol-submenu-list">
+
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">Portfolio List</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="portfolio-list-classic.html">List Classic</a></li>
+                                                                <li><a href="portfolio-list-overlay.html">List Overlay</a></li>
+                                                                <li><a href="portfolio-list-compact.html">List Compact</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">Portfolio Grid</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="portfolio-grid-creative-1.html">Grid Creative v.1</a></li>
+                                                                <li><a href="portfolio-grid-creative-2.html">Grid Creative v.2</a></li>
+                                                                <li><a href="portfolio-grid-modern.html">Grid Modern</a></li>
+                                                                <li><a href="portfolio-grid-classic.html">Grid Classic</a></li>
+                                                                <li><a href="portfolio-grid-portrait-mode.html">Portrait Mode</a></li>
+                                                                <li><a href="portfolio-one-column.html">One Column</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap active">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">Slider &amp; Carousel</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="portfolio-fullscreen-slider.html">Fullscreen Slider</a></li>
+                                                                <li><a href="portfolio-carousel-overlay.html">Carousel Overlay</a></li>
+                                                                <li><a href="portfolio-carousel-center.html">Carousel Center</a></li>
+                                                                <li class="active"><a href="portfolio-hover-carousel.html">Hover Carousel</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+
+                                                    <li><a href="portfolio-interactive.html">Interactive</a></li>
+                                                    <li><a href="portfolio-interactive-compact.html">Interactive Compact</a></li>
+                                                    <li><a href="elements-classic-menu.html">Classic Menu</a></li>
+                                                    <li><a href="elements-classic-filter.html">Classic Filter</a></li>
+
+                                                </ul> <!-- /.tt-ol-submenu-list -->
+                                            </div> <!-- /.tt-ol-submenu -->
+                                        </li>
+                                        <!-- End submenu (sub-master) -->
+                                        <!-- Begin submenu (submenu master)
+                                        ==================================== -->
+                                        <li class="tt-ol-submenu-wrap">
+                                            <div class="tt-ol-submenu-trigger">
+                                                <a href="#">About</a>
+                                                <div class="tt-ol-submenu-caret-wrap">
+                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                            </div> <!-- /.tt-ol-submenu-trigger -->
+                                            <div class="tt-ol-submenu">
+                                                <ul class="tt-ol-submenu-list">
+
+                                                    <li><a href="about-us.html">About Us</a></li>
+                                                    <li><a href="about-me.html">About Me</a></li>
+
+                                                </ul> <!-- /.tt-ol-submenu-list -->
+                                            </div> <!-- /.tt-ol-submenu -->
+                                        </li>
+                                        <!-- End submenu (sub-master) -->
+                                        <!-- Begin submenu (submenu master)
+                                        ==================================== -->
+                                        <li class="tt-ol-submenu-wrap">
+                                            <div class="tt-ol-submenu-trigger">
+                                                <a href="#">Blog</a>
+                                                <div class="tt-ol-submenu-caret-wrap">
+                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                            </div> <!-- /.tt-ol-submenu-trigger -->
+                                            <div class="tt-ol-submenu">
+                                                <ul class="tt-ol-submenu-list">
+
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">Blog List</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="blog-interactive.html">Interactive List</a></li>
+                                                                <li><a href="blog-list.html">Compact List</a></li>
+                                                                <li><a href="blog-classic.html">Classic List</a></li>
+                                                                <li><a href="blog-classic-sidebar.html">Classic Sidebar</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">Blog Post</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="blog-post.html">Single Post</a></li>
+                                                                <li><a href="blog-post-classic-sidebar.html">Classic Sidebar</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+
+                                                </ul> <!-- /.tt-ol-submenu-list -->
+                                            </div> <!-- /.tt-ol-submenu -->
+                                        </li>
+                                        <!-- End submenu (sub-master) -->
+                                        <!-- Begin submenu (submenu master)
+                                        ==================================== -->
+                                        <li class="tt-ol-submenu-wrap">
+                                            <div class="tt-ol-submenu-trigger">
+                                                <a href="#">Shop</a>
+                                                <div class="tt-ol-submenu-caret-wrap">
+                                                    <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                            </div> <!-- /.tt-ol-submenu-trigger -->
+                                            <div class="tt-ol-submenu">
+                                                <ul class="tt-ol-submenu-list">
+
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">Product Lists</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="shop-list.html">Sliding Sidebar</a></li>
+                                                                <li><a href="shop-list-classic.html">Classic Sidebar</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">Product Pages</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="shop-single.html">Product Page</a></li>
+                                                                <li><a href="shop-single-simple.html">Simple Product Page</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">Product Ordering</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="shop-cart.html">Shopping Cart</a></li>
+                                                                <li><a href="shop-checkout.html">Checkout</a></li>
+                                                                <li><a href="shop-order-details.html">Order Details</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+                                                    <!-- Begin submenu
+                                                    =================== -->
+                                                    <li class="tt-ol-submenu-wrap">
+                                                        <div class="tt-ol-submenu-trigger">
+                                                            <a href="#" class="tt-ol-submenu-link">More Pages</a>
+                                                            <div class="tt-ol-submenu-caret-wrap">
+                                                                <div class="tt-ol-submenu-caret magnetic-item"></div>
+                                                            </div> <!-- /.tt-ol-submenu-caret-wrap -->
+                                                        </div> <!-- /.tt-ol-submenu-trigger -->
+                                                        <div class="tt-ol-submenu">
+                                                            <ul class="tt-ol-submenu-list">
+
+                                                                <li><a href="shop-wishlist.html">Wishlist</a></li>
+                                                                <li><a href="shop-login.html">Login Page</a></li>
+                                                                <li><a href="shop-register.html">Register Account</a></li>
+                                                                <li><a href="shop-reset-password.html">Reset Password</a></li>
+
+                                                            </ul> <!-- /.tt-ol-submenu-list -->
+                                                        </div> <!-- /.tt-ol-submenu -->
+                                                    </li>
+                                                    <!-- End submenu -->
+
+                                                </ul> <!-- /.tt-ol-submenu-list -->
+                                            </div> <!-- /.tt-ol-submenu -->
+                                        </li>
+                                        <!-- End submenu (sub-master) -->
+
+                                        <li><a href="contact.html">Contact</a></li>
+
+                                    </ul>
+                                    <!-- End menu list -->
+
+                                </div> <!-- /.tt-ol-menu-content -->
+                            </div> <!-- /.tt-ol-menu-inner -->
+                        </div> <!-- /.tt-ol-menu-holder -->
+                        <!-- Begin noise background -->
+                        <div class="bg-noise"></div>
+                        <!-- End noise background -->
+
+                    </nav>
+                    <!-- End overlay menu -->
+
+                </div> <!-- /.header-col -->
+            </div> <!-- /.header-inner -->
+        </header>
+        <!-- End header -->
+        <!-- *************************************
+        *********** Begin content wrap ***********
+        ************************************** -->
+        <div id="content-wrap">
+
+
+            <!-- *************************************
+            *********** Begin page content ***********
+            ************************************** -->
+            <div id="page-content">
+
+
+                <!-- ============================================================
+                ///// Begin portfolio hover carousel (full screen carousel) /////
+                =================================================================
+                * IMPORTANT: The portfolio hover carousel is a standalone element. Do not add other template elements to this page!!!
+                * Use class "cursor-drag-mouse-down" to enable cursor drag style on mouse down (data-simulate-touch attribute must be enabled).
+                * Available data attributes:
+                        data-loop="true"......................(true/false)
+                        data-simulate-touch="true"............(true/false)
+                        data-grab-cursor="true"...............(true/false)
+                -->
+                <div class="tt-portfolio-hover-carousel cursor-drag-mouse-down" data-loop="true" data-simulate-touch="true" data-grab-cursor="true">
+
+                    <!-- Begin swiper container -->
+                    <div class="swiper">
+
+                        <!-- Begin swiper wrapper (required) -->
+                        <div class="swiper-wrapper">
+
+                            <!-- Begin swiper slide
+                            ======================== -->
+                            <div class="swiper-slide" data-slide="1">
+
+                                <!-- Begin portfolio hover carousel item
+                                ========================================= -->
+                                <a href="single-project-9.html" class="tt-phc-item" data-number="01" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Victorian<br> Girls</h2> <!-- You may need to adjust the font size to suit your needs. -->
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">People</div>
+                                        <!-- <div class="tt-phc-category">Varia</div> -->
+                                    </div> <!-- /.tt-phc-categories -->
+                                </a>
+                                <!-- End portfolio hover carousel item -->
+
+                            </div>
+                            <!-- End swiper slide -->
+                            <!-- Begin swiper slide
+                            ======================== -->
+                            <div class="swiper-slide" data-slide="2">
+
+                                <!-- Begin portfolio hover carousel item
+                                ========================================= -->
+                                <a href="single-project-2.html" class="tt-phc-item" data-number="02" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Smithy</h2> <!-- You may need to adjust the font size to suit your needs. -->
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">Creative</div>
+                                        <!-- <div class="tt-phc-category">Varia</div> -->
+                                    </div> <!-- /.tt-phc-categories -->
+                                </a>
+                                <!-- End portfolio hover carousel item -->
+
+                            </div>
+                            <!-- End swiper slide -->
+                            <!-- Begin swiper slide
+                            ======================== -->
+                            <div class="swiper-slide" data-slide="3">
+
+                                <!-- Begin portfolio hover carousel item
+                                ========================================= -->
+                                <a href="single-project-3.html" class="tt-phc-item" data-number="03" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Fashion<br> Week</h2> <!-- You may need to adjust the font size to suit your needs. -->
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">People</div>
+                                        <!-- <div class="tt-phc-category">Varia</div> -->
+                                    </div> <!-- /.tt-phc-categories -->
+                                </a>
+                                <!-- End portfolio hover carousel item -->
+
+                            </div>
+                            <div class="swiper-slide" data-slide="4">
+                                <a href="single-project-4.html" class="tt-phc-item" data-number="04" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Mystery<br> Forest</h2>
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">Nature</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-slide="5">
+
+                                <a href="single-project-5.html" class="tt-phc-item" data-number="05" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Red<br> Package</h2>
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">Branding</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-slide="6">
+                                <a href="single-project-6.html" class="tt-phc-item" data-number="06" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Studio<br> Shoot</h2>
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">People</div>
+                                    </div> <
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-slide="7">
+
+                                <a href="single-project-7.html" class="tt-phc-item" data-number="07" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Breaking<br> Wave</h2>
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">Nature</div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="swiper-slide" data-slide="8">
+                                <a href="single-project-8.html" class="tt-phc-item" data-number="08" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Wall<br> Lamp</h2>
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">Branding</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" data-slide="9">
+                                <a href="single-project-1.html" class="tt-phc-item" data-number="09" data-cursor="View<br>Project">
+                                    <h2 class="tt-phc-item-title">Elegant<br> Stoves</h2>
+                                    <div class="tt-phc-categories">
+                                        <div class="tt-phc-category">Creative</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tt-portfolio-hover-carousel-images">
+                        <div class="phc-images-inner">
+                            <div class="phc-image cover-opacity-4" data-slide="1">
+                                <img src="assets/img/portfolio/portfolio-1.jpg" alt="image">
+                            </div>
+                            <div class="phc-image cover-opacity-4" data-slide="2">
+                                <img src="assets/img/portfolio/portfolio-2.jpg" alt="image">
+                            </div>
+                            <div class="phc-image cover-opacity-4" data-slide="3">
+                                <video class="phc-video" loop muted preload="metadata" poster="assets/vids/fashion-week.jpg">
+                                    <source src="assets/vids/fashion-week.mp4" type="video/mp4">
+                                    <source src="assets/vids/fashion-week.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="phc-image cover-opacity-4" data-slide="4">
+                                <img src="assets/img/portfolio/portfolio-3.jpg" alt="image">
+                            </div>
+                            <div class="phc-image cover-opacity-4" data-slide="5">
+                                <img src="assets/img/portfolio/portfolio-4.jpg" alt="image">
+                            </div>
+                            <div class="phc-image cover-opacity-4" data-slide="6">
+                                <img src="assets/img/portfolio/portfolio-5.jpg" alt="image">
+                            </div>
+                            <div class="phc-image cover-opacity-4" data-slide="7">
+                                <img src="assets/img/portfolio/portfolio-6.jpg" alt="image">
+                            </div>
+                            <div class="phc-image cover-opacity-4 phc-image-is-light" data-slide="8">
+                                <img src="assets/img/portfolio/portfolio-7.jpg" alt="image">
+                            </div>
+                            <div class="phc-image cover-opacity-4" data-slide="9">
+                                <img src="assets/img/portfolio/portfolio-8.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tt-phc-counter tt-swiper-nav">
+                        <div class="tt-phc-count">
+                            <span data-slide="1">1</span>
+                            <span data-slide="2">2</span>
+                            <span data-slide="3">3</span>
+                            <span data-slide="4">4</span>
+                            <span data-slide="5">5</span>
+                            <span data-slide="6">6</span>
+                            <span data-slide="7">7</span>
+                            <span data-slide="8">8</span>
+                            <span data-slide="9">9</span>
+                        </div>
+                        <div class="tt-phc-counter-separator"></div>
+                    </div>
+                </div>
+            </div>
+            <footer id="tt-footer" class="footer-absolute">
+                <div class="tt-footer-inner">
+                    <div class="footer-col tt-align-center-left">
+                        <div class="footer-col-inner">
+                            <div class="tt-btn tt-btn-link">
+                                <a href="contact.html" data-hover="Get in Touch">Get in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-col tt-align-center-right">
+                        <div class="footer-col-inner">
+
+                            <div class="footer-social">
+                                <div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
+                                <div class="social-buttons">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/themetorium" class="magnetic-item" target="_blank" rel="noopener">Fb.</a></li>
+                                        <li><a href="https://twitter.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Tw.</a></li>
+                                        <li><a href="https://www.youtube.com/" class="magnetic-item" target="_blank" rel="noopener">Yt.</a></li>
+                                        <li><a href="https://dribbble.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Dr.</a></li>
+                                        <li><a href="https://www.behance.net/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Be.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</main>

@@ -16,20 +16,72 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Ramal\Desktop\MyFolder\Projects\WebApps\WebRealProjects\Shahnaz Mammadova\ShahnazMammadova\ShahnazMammadova
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/AboutMe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRNZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/BlogDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ0RldGFpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Blogs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Checkout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Landing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuZGluZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/ProductDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERldGFpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/ResetPassword/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXRQYXNzd29yZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Shop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Stories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3Rvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/StoryDetail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcnlEZXRhaWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/Wishlist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaGxpc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ramal/Desktop/MyFolder/Projects/WebApps/WebRealProjects/Shahnaz Mammadova/ShahnazMammadova/ShahnazMammadova/Views/_ViewImports.cshtml]
