@@ -1,5 +1,7 @@
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ShahnazMammadova.DataAccessLayer.Context;
+using ShahnazMammadova.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,16 @@ builder.Services.AddDbContext<AppDBContext>(opt =>
 {
 	opt.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
 });
+
+builder.Services.AddIdentity<User, IdentityRole>(opt =>
+{
+	opt.Password.RequireNonAlphanumeric = false;
+	opt.Password.RequireDigit = true;
+	opt.Password.RequiredLength = 6;
+	opt.Lockout.AllowedForNewUsers = false;
+	opt.User.AllowedUserNameCharacters = "aAbBcCdDeEəƏIğĞüÜöÖçÇşŞfFgGhHiİjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890";
+	opt.User.RequireUniqueEmail = true;
+}).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDBContext>();
 
 var app = builder.Build();
 
@@ -27,6 +39,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthentication();	
 
 app.MapControllerRoute(
     name: "default",
