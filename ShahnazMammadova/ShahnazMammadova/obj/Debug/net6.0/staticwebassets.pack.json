@@ -1,599 +1,599 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShahnazMammadova.bundle.scp.css",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ShahnazMammadova.bundle.scp.css",
       "PackagePath": "staticwebassets\\ShahnazMammadova.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\css\\helper.css",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\css\\helper.css",
       "PackagePath": "staticwebassets\\assets\\css\\helper.css"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\css\\shop.css",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\css\\shop.css",
       "PackagePath": "staticwebassets\\assets\\css\\shop.css"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\css\\theme.css",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\css\\theme.css",
       "PackagePath": "staticwebassets\\assets\\css\\theme.css"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\bg-noise.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\bg-noise.png",
       "PackagePath": "staticwebassets\\assets\\img\\bg-noise.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\avatar.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\avatar.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\avatar.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\list\\blog-list-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\list\\blog-list-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\list\\blog-list-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\list\\blog-list-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\list\\blog-list-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\list\\blog-list-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\single\\blog-post-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\blog\\single\\blog-post-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\blog\\single\\blog-post-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-1.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-1.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-10.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-10.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-10.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-2.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-2.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-2.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-3.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-3.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-3.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-4.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-4.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-4.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-5.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-5.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-5.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-6.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-6.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-6.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-7.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-7.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-7.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-8.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-8.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-8.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-9.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\clients\\client-9.png",
       "PackagePath": "staticwebassets\\assets\\img\\clients\\client-9.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\demo\\demo-cursor.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\demo\\demo-cursor.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\demo\\demo-cursor.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\demo\\demo-low.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\demo\\demo-low.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\demo\\demo-low.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\demo\\demo-ph.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\demo\\demo-ph.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\demo\\demo-ph.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\logo-dark.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\logo-dark.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo-dark.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\logo-light.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\logo-light.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo-light.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\logo.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\logoremove.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\logoremove.png",
       "PackagePath": "staticwebassets\\assets\\img\\logoremove.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\low-qlt-thumb.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\low-qlt-thumb.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\low-qlt-thumb.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\blog-ph\\blog-ph-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\blog-ph\\blog-ph-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\blog-ph\\blog-ph-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\ph-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\ph-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\ph-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\ph-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\ph-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-6.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\ph-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-7.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\ph-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\ph-7.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\project-ph\\project-ph-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\project-ph\\project-ph-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\project-ph\\project-ph-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\project-ph\\project-ph-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\project-ph\\project-ph-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-6.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\project-ph\\project-ph-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-7.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\project-ph\\project-ph-7.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-8.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\page-header\\project-ph\\project-ph-8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\page-header\\project-ph\\project-ph-8.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-6.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-7.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-7.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-8.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\portfolio-8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\portfolio-8.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-1\\project-1-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-1\\project-1-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-1\\project-1-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-1\\project-1-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-1\\project-1-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-1\\project-1-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-1\\project-1-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-1\\project-1-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-1\\project-1-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-2\\project-2-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-2\\project-2-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-2\\project-2-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-2\\project-2-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-6.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-2\\project-2-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-2\\project-2-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-3\\project-3-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-3\\project-3-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-3\\project-3-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-3\\project-3-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-6.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-3\\project-3-6.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-7.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-3\\project-3-7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-3\\project-3-7.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-5\\project-5-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-5\\project-5-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-5\\project-5-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-5\\project-5-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-5\\project-5-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-5\\project-5-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-6\\project-6-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-6\\project-6-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-6\\project-6-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-6\\project-6-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-6\\project-6-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-6\\project-6-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-6\\project-6-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-6\\project-6-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-6\\project-6-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-6\\project-6-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-6\\project-6-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-6\\project-6-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-8\\project-8-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-8\\project-8-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-8\\project-8-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-8\\project-8-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-8\\project-8-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-8\\project-8-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-8\\project-8-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-8\\project-8-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-8\\project-8-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-9\\project-9-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-9\\project-9-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-9\\project-9-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-9\\project-9-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-9\\project-9-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-9\\project-9-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-9\\project-9-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-9\\project-9-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-9\\project-9-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-9\\project-9-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\portfolio\\single-project\\project-9\\project-9-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\portfolio\\single-project\\project-9\\project-9-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\logorb.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\logorb.png",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\logorb.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\paypal.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\paypal.png",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\paypal.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\shop-low-qlt-thumb.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\shop-low-qlt-thumb.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\shop-low-qlt-thumb.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\single\\big\\product-single-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\single\\big\\product-single-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\single\\big\\product-single-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\single\\big\\product-single-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\single\\big\\product-single-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\single\\big\\product-single-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-1.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\small\\product-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-2.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\small\\product-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-3.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\small\\product-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-4.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\small\\product-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-5.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\shop\\small\\product-5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\shop\\small\\product-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\signature.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\img\\signature.png",
       "PackagePath": "staticwebassets\\assets\\img\\signature.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\js\\shop.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\js\\shop.js",
       "PackagePath": "staticwebassets\\assets\\js\\shop.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\js\\theme.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\js\\theme.js",
       "PackagePath": "staticwebassets\\assets\\js\\theme.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\css\\fontawesome-all.min.css",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\css\\fontawesome-all.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\css\\fontawesome-all.min.css"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.eot",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.eot"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.svg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.svg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.ttf",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.woff",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.woff"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.woff2",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400d41d.eot",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400d41d.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-brands-400d41d.eot"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.eot",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.eot"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.svg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.svg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.ttf",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.woff",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.woff"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.woff2",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400d41d.eot",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400d41d.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-regular-400d41d.eot"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.eot",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.eot"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.svg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.svg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.ttf",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.woff",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.woff"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.woff2",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900d41d.eot",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900d41d.eot",
       "PackagePath": "staticwebassets\\assets\\vendor\\fontawesome\\webfonts\\fa-solid-900d41d.eot"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\gsap\\ScrollToPlugin.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\gsap\\ScrollToPlugin.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\gsap\\ScrollToPlugin.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\gsap\\ScrollTrigger.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\gsap\\ScrollTrigger.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\gsap\\ScrollTrigger.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\gsap\\gsap.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\gsap\\gsap.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\gsap\\gsap.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\isotope\\imagesloaded.pkgd.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\isotope\\imagesloaded.pkgd.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\isotope\\imagesloaded.pkgd.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\isotope\\isotope.pkgd.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\isotope\\isotope.pkgd.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\isotope\\isotope.pkgd.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\isotope\\packery-mode.pkgd.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\isotope\\packery-mode.pkgd.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\isotope\\packery-mode.pkgd.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\jquery.mousewheel.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\jquery.mousewheel.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\jquery.mousewheel.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\jquery\\jquery.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\jquery\\jquery.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\jquery\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\css\\lightgallery.min.css",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\css\\lightgallery.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\css\\lightgallery.min.css"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\fonts\\lg8306.svg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\fonts\\lg8306.svg",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\fonts\\lg8306.svg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\fonts\\lg8306.ttf",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\fonts\\lg8306.ttf",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\fonts\\lg8306.ttf"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\fonts\\lg8306.woff",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\fonts\\lg8306.woff",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\fonts\\lg8306.woff"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\img\\loading.gif",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\img\\loading.gif",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\img\\loading.gif"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\img\\video-play.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\img\\video-play.png",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\img\\video-play.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\img\\vimeo-play.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\img\\vimeo-play.png",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\img\\vimeo-play.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\img\\youtube-play.png",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\img\\youtube-play.png",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\img\\youtube-play.png"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\js\\lightgallery-all.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\lightgallery\\js\\lightgallery-all.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\lightgallery\\js\\lightgallery-all.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\normalize\\normalize.min.css",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\normalize\\normalize.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\normalize\\normalize.min.css"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\smooth-scrollbar.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\smooth-scrollbar.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\smooth-scrollbar.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\swiper\\css\\swiper-bundle.min.css",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\swiper\\css\\swiper-bundle.min.css",
       "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\css\\swiper-bundle.min.css"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\swiper\\js\\swiper-bundle.min.js",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vendor\\swiper\\js\\swiper-bundle.min.js",
       "PackagePath": "staticwebassets\\assets\\vendor\\swiper\\js\\swiper-bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\fashion-week.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\fashion-week.jpg",
       "PackagePath": "staticwebassets\\assets\\vids\\fashion-week.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\fashion-week.mp4",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\fashion-week.mp4",
       "PackagePath": "staticwebassets\\assets\\vids\\fashion-week.mp4"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\fashion-week.webm",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\fashion-week.webm",
       "PackagePath": "staticwebassets\\assets\\vids\\fashion-week.webm"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\office-team.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\office-team.jpg",
       "PackagePath": "staticwebassets\\assets\\vids\\office-team.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\office-team.mp4",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\office-team.mp4",
       "PackagePath": "staticwebassets\\assets\\vids\\office-team.mp4"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\office-team.webm",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\office-team.webm",
       "PackagePath": "staticwebassets\\assets\\vids\\office-team.webm"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\smithy.jpg",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\smithy.jpg",
       "PackagePath": "staticwebassets\\assets\\vids\\smithy.jpg"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\smithy.mp4",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\smithy.mp4",
       "PackagePath": "staticwebassets\\assets\\vids\\smithy.mp4"
     },
     {
-      "Id": "C:\\Users\\Ramal\\Desktop\\MyFolder\\Projects\\WebApps\\WebRealProjects\\Shahnaz Mammadova\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\smithy.webm",
+      "Id": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\assets\\vids\\smithy.webm",
       "PackagePath": "staticwebassets\\assets\\vids\\smithy.webm"
     },
     {

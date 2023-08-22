@@ -21,7 +21,7 @@ builder.Services.AddIdentity<User, IdentityRole>(opt =>
 	opt.Lockout.AllowedForNewUsers = false;
 	opt.User.AllowedUserNameCharacters = "aAbBcCdDeEəƏIğĞüÜöÖçÇşŞfFgGhHiİjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890";
 	opt.User.RequireUniqueEmail = true;
-}).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDBContext>();
+}).AddDefaultTokenProviders().AddTokenProvider<DataProtectorTokenProvider<User>>(TokenOptions.DefaultProvider).AddEntityFrameworkStores<AppDBContext>();
 
 var app = builder.Build();
 
