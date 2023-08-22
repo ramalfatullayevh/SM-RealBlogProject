@@ -16,6 +16,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Ramal\Desktop\SM-RealBlogProject\ShahnazMammadova\ShahnazMammadova
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Story/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcU3RvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Views/AboutMe/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRNZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

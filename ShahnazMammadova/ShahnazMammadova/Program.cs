@@ -39,10 +39,17 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-app.UseAuthentication();	
+app.UseAuthentication();
+
+
+app.MapControllerRoute(
+	name: "areas",
+	pattern: "{area:exists}/{controller=dashboard}/{action=index}/{id?}"
+	);
+
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=home}/{action=index}/{id?}");
 
 app.Run();
