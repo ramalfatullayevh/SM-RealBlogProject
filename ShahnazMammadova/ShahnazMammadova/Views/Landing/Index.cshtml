@@ -592,108 +592,121 @@
 					============================
 					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 					-->
-					<div class="tt-section padding-top-xlg-150 padding-bottom-xlg-100 padding-left-sm-3-p padding-right-sm-3-p bg-white-accent-3">
-						<div class="tt-section-inner">
+				<div class="tt-section padding-bottom-xlg-150 padding-left-sm-3-p padding-right-sm-3-p">
+					<div class="tt-section-inner tt-wrap max-width-1100">
 
-							<!-- Begin testimonials slider
-							===============================
-							* Use class "text-center" to align text to the center.
-							* Use class "cursor-drag" to enable cursor drag on carousel hover ("data-simulate-touch" attribute must be enabled!).
-							* Use class "ts-hide-pagination" to hide pagination (for desktop only!).
-							* Use class "ts-hide-navigation" to hide navigation arrows.
-							* Use class "ts-full-width" to enable full width slider.
-							* Available data attributes:
-									data-speed="900"......................(milliseconds)
-									data-autoplay="5000"..................(milliseconds. Note: disabled after user first interactions)
-									data-simulate-touch="true"............(true/false)
-									data-loop="true"......................(true/false)
-							-->
-							<div class="tt-testimonials-slider ts-full-width text-center cursor-drag ts-scale-down ts-hide-navigation anim-fadeinup" data-loop="true" data-simulate-touch="true" data-speed="900">
-
-								<!-- Begin swiper container -->
-								<div class="swiper">
-
-									<!-- Begin swiper wrapper (required) -->
-									<div class="swiper-wrapper">
-
-										<!-- Begin swiper slide
-										======================== -->
-										<div class="swiper-slide font-alter">
-											<div class="tt-ts-item">
-												<div class="tt-ts-text">
-													"One of the best template I've ever had. I love it! It's fully customizable, well coded, fast and responsive - fitting for all kind of devices."
-												</div>
-												<div class="tt-ts-subtext">- Wironimo</div>
-											</div>
-										</div>
-										<!-- End swiper slide -->
-										<!-- Begin swiper slide
-										======================== -->
-										<div class="swiper-slide font-alter">
-											<div class="tt-ts-item">
-												<div class="tt-ts-text">
-													"Brilliant template. Tons of options, many concepts, design flexibility, code quality, explanatory comments in each section for easy styling."
-												</div>
-												<div class="tt-ts-subtext">- Gneto</div>
-											</div>
-										</div>
-										<!-- End swiper slide -->
-										<!-- Begin swiper slide
-										======================== -->
-										<div class="swiper-slide font-alter">
-											<div class="tt-ts-item">
-												<div class="tt-ts-text">
-													"Easy to customize, plenty of choices to display your portfolio, fast loading times. Excellent support."
-												</div>
-												<div class="tt-ts-subtext">- Brendak</div>
-											</div>
-										</div>
-										<!-- End swiper slide -->
-										<!-- Begin swiper slide
-										======================== -->
-										<div class="swiper-slide font-alter">
-											<div class="tt-ts-item">
-												<div class="tt-ts-text">
-													"Very nice design and well organised and commented code. Also good customer service."
-												</div>
-												<div class="tt-ts-subtext">- Gazzzzz</div>
-											</div>
-										</div>
-										<!-- End swiper slide -->
-										<!-- Begin swiper slide
-										======================== -->
-										<div class="swiper-slide font-alter">
-											<div class="tt-ts-item">
-												<div class="tt-ts-text">
-													"I founded a bug on Iphone and Ipad and the author fixed very quickly. I appreciated his efforts and his quickness in solving the problem."
-												</div>
-												<div class="tt-ts-subtext">- Admanente</div>
-											</div>
-										</div>
-										<!-- End swiper slide -->
-
+						<!-- Begin tt-Heading
+						======================
+						* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
+						* Use class "tt-heading-stroke" to enable stroke style.
+						* Use class "tt-heading-center" to align tt-Heading to center.
+						* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
+						-->
+						<div class="tt-heading tt-heading-lg tt-heading-center margin-bottom-15-p anim-fadeinup">
+							<h3 class="tt-heading-subtitle text-gray">What We Do</h3>
+							<h2 class="tt-heading-title">Services</h2>
+						</div>
+						<!-- End tt-Heading -->
+						<!-- Begin accordion
+						=====================
+						* Use class "tt-ac-sm", "tt-ac-lg", "tt-ac-xlg" or "tt-ac-xxlg" to set accordion size.
+						* Use class "tt-ac-borders" to enable borders.
+						* Add class "is-open" to the "tt-accordion-content" to make this content open by default.
+						-->
+						<div class="tt-accordion tt-ac-xlg tt-ac-borders">
+							<div class="tt-accordion-item anim-fadeinup">
+								<div class="tt-accordion-heading">
+									<h3 class="tt-ac-head-title">UX / Research</h3>
+									<div class="tt-accordion-subtext">Mauris mauris ante</div>
+									<div class="tt-accordion-caret-wrap">
+										<div class="tt-accordion-caret magnetic-item"></div>
 									</div>
-									<!-- End swiper wrapper -->
+								</div> <!-- /.tt-accordion-heading -->
+								<div class="tt-accordion-content max-width-800">
+									<p>
+										Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+										ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+										amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+										odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+									</p>
 
-								</div>
-								<!-- End swiper container -->
-								<!-- Testimonials slider navigation (arrows) -->
-								<div class="tt-ts-nav-prev">
-									<div class="tt-ts-nav-arrow magnetic-item"></div>
-								</div>
-								<div class="tt-ts-nav-next">
-									<div class="tt-ts-nav-arrow magnetic-item"></div>
-								</div>
+									<div class="tt-btn tt-btn-link">
+										<a href="dummy-page.html" data-hover="Read More">Read More</a>
+									</div>
+								</div> <!-- /.tt-accordion-content -->
+							</div> <!-- /.tt-accordion-item -->
 
-								<!-- Testimonials slider pagination -->
-								<div class="tt-ts-pagination hide-cursor"></div>
+							<div class="tt-accordion-item anim-fadeinup">
+								<div class="tt-accordion-heading">
+									<h3 class="tt-ac-head-title">Digital Strategy</h3>
+									<div class="tt-accordion-subtext">Vivamus nisi</div>
+									<div class="tt-accordion-caret-wrap">
+										<div class="tt-accordion-caret magnetic-item"></div>
+									</div>
+								</div> <!-- /.tt-accordion-heading -->
+								<div class="tt-accordion-content max-width-800">
+									<p>
+										Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+										ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+										amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+										odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+									</p>
 
-							</div>
-							<!-- End testimonials slider -->
+									<div class="tt-btn tt-btn-link">
+										<a href="dummy-page.html" data-hover="Read More">Read More</a>
+									</div>
+								</div> <!-- /.tt-accordion-content -->
+							</div> <!-- /.tt-accordion-item -->
 
-						</div> <!-- /.tt-section-inner -->
-					</div>
-					<!-- End tt-section -->
+							<div class="tt-accordion-item anim-fadeinup">
+								<div class="tt-accordion-heading">
+									<h3 class="tt-ac-head-title">Branding</h3>
+									<div class="tt-accordion-subtext">Nam min proin eget</div>
+									<div class="tt-accordion-caret-wrap">
+										<div class="tt-accordion-caret magnetic-item"></div>
+									</div>
+								</div> <!-- /.tt-accordion-heading -->
+								<div class="tt-accordion-content max-width-800">
+									<p>
+										Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+										ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+										amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+										odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+									</p>
+
+									<div class="tt-btn tt-btn-link">
+										<a href="dummy-page.html" data-hover="Read More">Read More</a>
+									</div>
+								</div> <!-- /.tt-accordion-content -->
+							</div> <!-- /.tt-accordion-item -->
+
+							<div class="tt-accordion-item anim-fadeinup">
+								<div class="tt-accordion-heading">
+									<h3 class="tt-ac-head-title">Marketing</h3>
+									<div class="tt-accordion-subtext">Condimentum sit amet</div>
+									<div class="tt-accordion-caret-wrap">
+										<div class="tt-accordion-caret magnetic-item"></div>
+									</div>
+								</div> <!-- /.tt-accordion-heading -->
+								<div class="tt-accordion-content max-width-800">
+									<p>
+										Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+										ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+										amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+										odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+									</p>
+
+									<div class="tt-btn tt-btn-link">
+										<a href="dummy-page.html" data-hover="Read More">Read More</a>
+									</div>
+								</div> <!-- /.tt-accordion-content -->
+							</div> <!-- /.tt-accordion-item -->
+
+						</div>
+						<!-- End accordion -->
+
+					</div> <!-- /.tt-section-inner -->
+				</div>					<!-- End tt-section -->
 					<!-- =======================
 					///// Begin tt-section /////
 					============================
