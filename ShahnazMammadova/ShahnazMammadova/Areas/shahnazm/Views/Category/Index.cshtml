@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewData["Title"] = "Kateqoriyalar - Shahnaz Mammadova";
+    Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
+}
+
+@model CatogryVM
+<!-- Page Sidebar Ends-->
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Kateqoriyalar</h3>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="category" asp-action="create" class="text-danger">Yeni Kateqoriya Yarat...</a></li>
+                    </ol>
+                </div>
+                <div class="col-sm-6">
+                    <!-- Bookmark Start-->
+                    <!-- Bookmark Ends-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Bütün Kateqoriyalar</h5><span>Bütün kateqoriyalara aşağıdakı cədvəldən nəzərat edə bilərsiz. <span class="text-danger"> Qeyd: Yeni kateqoriya yaratmaq üçün yuxarıdakı <bold>Yeni Kateqoriya Yarat</bold> - a keçid edin.</span></span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Kateqoriya</th>
+                                    <th scope="col">Yaranma Tarixi</th>
+                                    <th scope="col">Son Dəyişdirilmə Tarixi</th>
+                                    <th scope="col">Bloqlar</th>
+                                    <th scope="col">Hekayələr</th>
+                                    <th scope="col">Tənzimləmələr</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var category in Model.Categories.Where(c => c.IsDeleted == false))
+                                {
+                                    <tr>
+                                        <td>@category.NameAz</td>
+                                        <td>@category.CreatedTime.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
+                                        <td>@category.UpdatedTime?.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
+                                        <td>
+                                            @foreach (var blog in category.Blogs)
+                                            {
+                                                if (@blog.NameAz == null)
+                                                {
+                                                    <span> - </span>
+                                                }
+                                                else
+                                                {
+                                                    <span>@blog.NameAz</span>
+                                                }
+                                            }
+                                        </td>
+                                        <td>
+                                            @foreach (var story in category.Stories)
+                                            {
+                                                if (@story.NameAz == null)
+                                                {
+                                                    <span> - </span>
+                                                }
+                                                else
+                                                {
+                                                    <span>@story.NameAz</span>
+                                                }
+                                            }
+                                        </td>
+                                        <td>
+                                            <a class="btn btn-success" asp-controller="category" asp-action="update" asp-route-id=@category.Id data-bs-original-title="" title=""> <span class="icon-pencil-alt"></span></a>
+                                            <a class="btn btn-danger" asp-controller="category" asp-action="delete" asp-route-id=@category.Id data-bs-original-title="" title=""> <span class="icon-trash"></span></a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+</div>

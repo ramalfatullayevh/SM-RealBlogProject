@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewData["Title"] = "Kateqoriya Düzəliş Et - Shahnaz Mammadova";
+    Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
+}
+
+@model UpdateCategoryVM
+<!-- Page Sidebar Ends-->
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Kateqoriyanı Düzəliş Et</h3>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="category" asp-action="index" class="text-danger">Bütün Kateqoriyalara Bax...</a></li>
+                    </ol>
+                </div>
+                <div class="col-sm-6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <h5>Kateqoriyanı Düzəliş Edin</h5>
+                    </div>
+                    <form class="form theme-form" method="post">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput5">Kateqoriya Adı (Azərbaycan Dili) : </label>
+                                        <input asp-for="NameAz" class="form-control btn-pill" id="exampleFormControlInput5" type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput5">Kateqoriya Adı (İngilis Dili) : </label>
+                                        <input asp-for="NameEng" class="form-control btn-pill" id="exampleFormControlInput5" type="text">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput5">Kateqoriya Adı (Rus Dili) : </label>
+                                        <input asp-for="NameRu" class="form-control btn-pill" id="exampleFormControlInput5" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Dəyişikliyi Təsdiqlə</button>
+                            <a asp-controller="category" asp-action="index" class="btn btn-light">İmtina Et</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+</div>

@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ShahnazMammadova.Areas.shahnazm.Controllers
 {
     [Area("shahnazm")]
-    public class StoryController : Controller
+	[Authorize(Roles = "SuperAdmin")]
+
+	public class StoryController : Controller
 	{
 		public IActionResult Index()
 		{

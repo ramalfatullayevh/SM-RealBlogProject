@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShahnazMammadova.DataAccessLayer.Context;
 using ShahnazMammadova.Models;
@@ -6,6 +7,8 @@ using ShahnazMammadova.ViewModels;
 
 namespace ShahnazMammadova.Areas.shahnazm.Controllers
 {
+	[Area("shahnazm")]
+	//[Authorize(Roles ="SuperAdmin")]
 	public class CategoryController : Controller
 	{
 		readonly AppDBContext _context;
@@ -23,7 +26,7 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
 		{
 			var categories = new CatogryVM()
 			{
-				Categories = await _context.Categories.ToListAsync(),	
+				Categories = await _context.Categories.Include(ctg=>ctg.Blogs).Include(ctg=>ctg.Stories).ToListAsync(),	
 			};
 
 			return View(categories);
@@ -60,9 +63,18 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
 
 		//*****************Category Update Get*****************//
 		[HttpGet]
-		public async Task<IActionResult> Update()
+		public async Task<IActionResult> Update(int? id)
 		{
-			return View();
+			if(id is null) return BadRequest();
+			var category = await _context.Categories.FindAsync(id);	
+			if(category is null) return NotFound();
+			var update = new UpdateCategoryVM
+			{
+				NameAz = category.NameAz,
+				NameRu = category.NameRu,
+				NameEng = category.NameEng,
+			};
+			return View(update);
 		}
 
 

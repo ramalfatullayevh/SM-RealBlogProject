@@ -9,5 +9,6 @@ namespace ShahnazMammadova.Models
         public string NameEng { get; set; }
 
         public ICollection<Blog> Blogs { get; set; }
+        public ICollection<Story> Stories { get; set; }
     }
 }
