@@ -36,14 +36,17 @@
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleFormControlInput5">Hekayənin Adı (Azərbaycan dili)</label>
                                         <input asp-for="NameAz" class="form-control btn-pill" id="validationCustom01" type="text">
+                                        <span asp-validation-for="NameAz" class="text-danger"></span>
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleFormControlInput5">Hekayənin Adı (İngilis dili)</label>
                                         <input asp-for="NameEng" class="form-control btn-pill" id="validationCustom01" type="text">
+                                        <span asp-validation-for="NameEng" class="text-danger"></span>
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label" for="exampleFormControlInput5">Hekayənin Adı (Rus dili)</label>
                                         <input asp-for="NameRu" class="form-control btn-pill" id="validationCustom01" type="text">
+                                        <span asp-validation-for="NameRu" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
@@ -53,6 +56,7 @@
                                         <label class="form-label" for="exampleFormControlSelect8">Hekayənin Kateqoriyası</label>
                                         <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-select btn-pill p-l-45 digits" id="exampleFormControlSelect8" multiple="">
                                         </select>
+                                        <span asp-validation-for="CategoryId" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
@@ -63,6 +67,8 @@
                                     <div>
                                         <label class="form-label" for="exampleFormControlTextarea9">Hekayə (Azərbaycan dili)</label>
                                         <textarea asp-for="DescriptionAz" class="form-control btn-pill summernote" id="exampleFormControlTextarea9" rows="3"></textarea>
+                                        <span asp-validation-for="DescriptionAz" class="text-danger"></span>
+
                                     </div>
                                 </div>
                             </div>
@@ -71,6 +77,7 @@
                                     <div>
                                         <label class="form-label" for="exampleFormControlTextarea9">Hekayə (İngilis dili)</label>
                                         <textarea asp-for="DescriptionEng" class="form-control btn-pill summernote" id="exampleFormControlTextarea9" rows="3"></textarea>
+                                        <span asp-validation-for="DescriptionEng" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
@@ -79,6 +86,7 @@
                                     <div>
                                         <label class="form-label" for="exampleFormControlTextarea9">Hekayə (Rus dili)</label>
                                         <textarea asp-for="DescriptionRu" class="form-control btn-pill summernote" id="exampleFormControlTextarea9" rows="3"></textarea>
+                                        <span asp-validation-for="DescriptionRu" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
@@ -88,6 +96,7 @@
                                         <div class="col-sm-12">
                                             <label class="form-label">Şəkil (Əsas)</label>
                                             <input asp-for="FirstImage" class="form-control" type="file">
+                                            <span asp-validation-for="FirstImage" class="text-danger"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -98,6 +107,7 @@
                                         <div class="col-sm-12">
                                             <label class="form-label">Şəkil (Əlavə)</label>
                                             <input asp-for="SecondImage" class="form-control" type="file">
+                                            <span asp-validation-for="SecondImage" class="text-danger"></span>
                                         </div>
                                     </div>
                                 </div>

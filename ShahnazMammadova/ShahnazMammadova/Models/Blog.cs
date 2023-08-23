@@ -13,6 +13,7 @@ namespace ShahnazMammadova.Models
         public string DescriptionRu { get; set; }
         public string DescriptionEng { get; set; }
         public string? VideoUrl { get; set; }
+        public bool IsPopular { get; set; }
 
         public int CategoryId { get; set; }
         public Category Category { get; set; }

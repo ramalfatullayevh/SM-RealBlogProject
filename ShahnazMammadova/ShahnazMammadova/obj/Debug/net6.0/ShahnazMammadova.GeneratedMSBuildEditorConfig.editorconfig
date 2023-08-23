@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Ramal\Desktop\SM-RealBlogProject\ShahnazMammadova\ShahnazMammadova
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Blog/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcQmxvZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Blog/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Blog/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcQmxvZ1xVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Category/Create.cshtml]

@@ -1,19 +1,19 @@
 ﻿
 @{
-    ViewData["Title"] = "Hekayə Düzəliş Et - Shahnaz Mammadova";
+    ViewData["Title"] = "Bloq Yaz - Shahnaz Mammadova";
     Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
 }
 
-@model UpdateStoryVM
+@model CreateBlogVM
 
 <div class="page-body">
     <div class="container-fluid">
         <div class="page-header">
             <div class="row">
                 <div class="col-sm-6">
-                    <h3>Hekayə Düzəliş Et</h3>
+                    <h3>Yeni Bloq Yaz</h3>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="text-danger" asp-controller="story" asp-action="index">Bütün Hekayələrə Bax...</a></li>
+                        <li class="breadcrumb-item"><a class="text-danger" asp-controller="blog" asp-action="index">Bütün Bloqlara Bax...</a></li>
                     </ol>
                 </div>
                 <div class="col-sm-6">
@@ -27,36 +27,40 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header pb-0">
-                        <h5>Hekayəni Düzəlt</h5>
+                        <h5>Bloq Yaz</h5>
                     </div>
                     <form class="form theme-form" class="needs-validation" novalidate="" method="post" enctype="multipart/form-data">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label class="form-label" for="exampleFormControlInput5">Hekayənin Adı (Azərbaycan dili)</label>
+                                        <label class="form-label" for="exampleFormControlInput5">Bloqun Adı (Azərbaycan dili)</label>
                                         <input asp-for="NameAz" class="form-control btn-pill" id="validationCustom01" type="text">
                                         <span asp-validation-for="NameAz" class="text-danger"></span>
+
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label" for="exampleFormControlInput5">Hekayənin Adı (İngilis dili)</label>
+                                        <label class="form-label" for="exampleFormControlInput5">Bloqun Adı (İngilis dili)</label>
                                         <input asp-for="NameEng" class="form-control btn-pill" id="validationCustom01" type="text">
                                         <span asp-validation-for="NameEng" class="text-danger"></span>
+
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label" for="exampleFormControlInput5">Hekayənin Adı (Rus dili)</label>
+                                        <label class="form-label" for="exampleFormControlInput5">Bloqun Adı (Rus dili)</label>
                                         <input asp-for="NameRu" class="form-control btn-pill" id="validationCustom01" type="text">
                                         <span asp-validation-for="NameRu" class="text-danger"></span>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <label class="form-label" for="exampleFormControlSelect8">Hekayənin Kateqoriyası</label>
+                                        <label class="form-label" for="exampleFormControlSelect8">Bloqun Kateqoriyası</label>
                                         <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-select btn-pill p-l-45 digits" id="exampleFormControlSelect8" multiple="">
                                         </select>
                                         <span asp-validation-for="CategoryId" class="text-danger"></span>
+
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +69,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div>
-                                        <label class="form-label" for="exampleFormControlTextarea9">Hekayə (Azərbaycan dili)</label>
+                                        <label class="form-label" for="exampleFormControlTextarea9">Bloq Mətni (Azərbaycan dili)</label>
                                         <textarea asp-for="DescriptionAz" class="form-control btn-pill summernote" id="exampleFormControlTextarea9" rows="3"></textarea>
                                         <span asp-validation-for="DescriptionAz" class="text-danger"></span>
 
@@ -75,7 +79,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div>
-                                        <label class="form-label" for="exampleFormControlTextarea9">Hekayə (İngilis dili)</label>
+                                        <label class="form-label" for="exampleFormControlTextarea9">Bloq Mətni (İngilis dili)</label>
                                         <textarea asp-for="DescriptionEng" class="form-control btn-pill summernote" id="exampleFormControlTextarea9" rows="3"></textarea>
                                         <span asp-validation-for="DescriptionEng" class="text-danger"></span>
 
@@ -85,7 +89,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div>
-                                        <label class="form-label" for="exampleFormControlTextarea9">Hekayə (Rus dili)</label>
+                                        <label class="form-label" for="exampleFormControlTextarea9">Bloq Mətni (Rus dili)</label>
                                         <textarea asp-for="DescriptionRu" class="form-control btn-pill summernote" id="exampleFormControlTextarea9" rows="3"></textarea>
                                         <span asp-validation-for="DescriptionRu" class="text-danger"></span>
 
@@ -96,11 +100,9 @@
                                 <div class="col">
                                     <div class="mb-3 row">
                                         <div class="col-sm-12">
-                                            <label class="form-label">Şəkil (Əsas)</label><br />
-                                            <img src="~/user/assets/storyimg/@Model.FirstImageUrl" width="150px" height="150px" />
+                                            <label class="form-label">Şəkil (Əsas)</label>
                                             <input asp-for="FirstImage" class="form-control" type="file">
                                             <span asp-validation-for="FirstImage" class="text-danger"></span>
-
                                         </div>
                                     </div>
                                 </div>
@@ -109,11 +111,20 @@
                                 <div class="col">
                                     <div class="mb-3 row">
                                         <div class="col-sm-12">
-                                            <label class="form-label">Şəkil (Əlavə)</label><br />
-                                            <img src="~/user/assets/storyimg/@Model.SecondImageUrl" width="150px" height="150px" />
+                                            <label class="form-label">Şəkil (Əlavə)</label>
                                             <input asp-for="SecondImage" class="form-control" type="file">
                                             <span asp-validation-for="SecondImage" class="text-danger"></span>
-
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top:20px">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-12">
+                                            <label class="form-label">Video</label>
+                                            <input asp-for="Video" class="form-control" type="file">
+                                            <span asp-validation-for="Video" class="text-danger"></span>
                                         </div>
                                     </div>
                                 </div>
@@ -125,16 +136,16 @@
                                 <div class="mb-3">
                                     <div class="checkbox checkbox-solid-success" style="margin-left:30px">
                                         <input asp-for="IsPopular" id="solid1" type="checkbox">
-
                                         <label for="solid1">Önə Çıxarılan Et</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
                         <div class="card-footer text-end">
-                            <button class="btn btn-primary" type="submit">Hekayəni Düzəliş Et</button>
-                            <a class="btn btn-light" asp-controller="story" asp-action="index">İmtina Et</a>
+                            <button class="btn btn-primary" type="submit">Bloqu Əlavə Et</button>
+                            <a class="btn btn-light" asp-controller="blog" asp-action="index">İmtina Et</a>
                         </div>
                     </form>
                 </div>

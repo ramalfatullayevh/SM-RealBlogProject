@@ -44496,5 +44496,133 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ShahnazMammadova.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\7b18d838-6b90-4f17-a2d5-4d95e4457820WhatsApp Image 2023-07-13 at 22.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/blogimg/7b18d838-6b90-4f17-a2d5-4d95e4457820WhatsApp Image 2023-07-13 at 22.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\7b18d838-6b90-4f17-a2d5-4d95e4457820WhatsApp Image 2023-07-13 at 22.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\818e246e-4768-47e0-8238-3956e94a006fBeliever - First 1 minute.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/blogimg/818e246e-4768-47e0-8238-3956e94a006fBeliever - First 1 minute.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\818e246e-4768-47e0-8238-3956e94a006fBeliever - First 1 minute.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\d2fdab9d-4b01-4f34-a85d-7862a9349d84logoremove.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/blogimg/d2fdab9d-4b01-4f34-a85d-7862a9349d84logoremove.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\d2fdab9d-4b01-4f34-a85d-7862a9349d84logoremove.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\e52b4fc7-26c7-4008-a4e4-ef20c6035d7fBeliever - First 1 minute.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/blogimg/e52b4fc7-26c7-4008-a4e4-ef20c6035d7fBeliever - First 1 minute.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\e52b4fc7-26c7-4008-a4e4-ef20c6035d7fBeliever - First 1 minute.mp4))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\f85fff9f-5370-4bd7-aa1e-a2ae49ac2b72WhatsApp Image 2023-08-12 at 09.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/blogimg/f85fff9f-5370-4bd7-aa1e-a2ae49ac2b72WhatsApp Image 2023-08-12 at 09.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\f85fff9f-5370-4bd7-aa1e-a2ae49ac2b72WhatsApp Image 2023-08-12 at 09.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\ffdf1c9b-503e-4b86-90c0-d38bfee3b9falogoremove.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/blogimg/ffdf1c9b-503e-4b86-90c0-d38bfee3b9falogoremove.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\ffdf1c9b-503e-4b86-90c0-d38bfee3b9falogoremove.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\storyimg\1fae88b6-39e2-48c4-a5b5-5214a18f389fWhatsApp Image 2023-08-12 at 09.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/storyimg/1fae88b6-39e2-48c4-a5b5-5214a18f389fWhatsApp Image 2023-08-12 at 09.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\storyimg\1fae88b6-39e2-48c4-a5b5-5214a18f389fWhatsApp Image 2023-08-12 at 09.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\storyimg\9ad3ec87-7e44-41e7-b8dc-ea4a5369e200WhatsApp Image 2023-07-13 at 22.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/storyimg/9ad3ec87-7e44-41e7-b8dc-ea4a5369e200WhatsApp Image 2023-07-13 at 22.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\storyimg\9ad3ec87-7e44-41e7-b8dc-ea4a5369e200WhatsApp Image 2023-07-13 at 22.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
   </ItemGroup>
 </Project>
