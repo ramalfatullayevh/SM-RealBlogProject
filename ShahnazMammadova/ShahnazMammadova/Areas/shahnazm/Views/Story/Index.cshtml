@@ -1,42 +1,22 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Hekayələr - Shahnaz Mammadova";
     Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
 }
 
-@* @model ICollection<Story>
- *@<!-- Page Sidebar Ends-->
+ @model ICollection<Story>
+ <!-- Page Sidebar Ends-->
 <div class="page-body">
     <div class="container-fluid">
         <div class="page-header">
             <div class="row">
                 <div class="col-sm-6">
-                    <h3>Bootstrap Basic Tables</h3>
+                    <h3>Hekayələr</h3>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Tables</li>
-                        <li class="breadcrumb-item">Bootstrap Tables</li>
-                        <li class="breadcrumb-item active">Basic Tables</li>
+                        <li class="breadcrumb-item"><a  class="text-danger" asp-controller="story" asp-action="create">Yeni Hekayə Yaz...</a></>
                     </ol>
                 </div>
                 <div class="col-sm-6">
                     <!-- Bookmark Start-->
-                    <div class="bookmark">
-                        <ul>
-                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Tables"><i data-feather="inbox"></i></a></li>
-                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Chat"><i data-feather="message-square"></i></a></li>
-                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Icons"><i data-feather="command"></i></a></li>
-                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Learning"><i data-feather="layers"></i></a></li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="bookmark-search" data-feather="star"></i></a>
-                                <form class="form-inline search-form">
-                                    <div class="form-group form-control-search">
-                                        <input type="text" placeholder="Search..">
-                                    </div>
-                                </form>
-                            </li>
-                        </ul>
-                    </div>
                     <!-- Bookmark Ends-->
                 </div>
             </div>
@@ -48,50 +28,37 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5>Hoverable rows</h5><span>Use a class <code>table-hover</code> to enable a hover state on table rows within a <code>tbody</code>.</span>
+                        <h5 style="text-align:center">Bütün Hekayələr</h5><span style="text-align:center">Yazdığınız bütün hekayələrə aşağıdakı cədvəldən nəzarət edə bilərsiniz. <bold><span style="text-align:center" class="text-danger">Qeyd: Yeni hekayə yazmaq üçün Yeni Hekayə Yaz - a keçid edin.</span></bold></span>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-hover table-bordered">
                             <thead>
-                                <tr>
-                                    <@* th scope="col">Hekayə Şəkili</th>
-                                        <th scope="col">Hekayə Adı</th>
-                                        <th scope="col">Yaranma Tarixi</th>
-                                        <th scope="col">Son Dəyişdirilmə Tarixi</th>
-                                        <th scope="col">Kateqoriyalar</th>
-                                        <th scope="col">İzlənmə Sayı</th>
-                                        <th scope="col">Tənzimləmələr</th> *@
+                                <tr style="text-align:center">
+                                    <th scope="col">Əsas Şəkil </th>
+                                    <th scope="col">Əlavə Şəkil </th>
+                                    <th scope="col">Adı</th>
+                                    <th scope="col">Yaranma Tarixi</th>
+                                    <th scope="col">Dəyişdirilmə Tarixi</th>
+                                    <th scope="col">Kateqoriya</th>
+                                    <th scope="col">Tənzimləmələr</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                @*                                 @foreach (var story in Model.Where(c => c.IsDeleted == false))
+                            <tbody style="text-align:center">
+                                @foreach (var story in Model.Where(c => c.IsDeleted == false))
                                 {
-                                <tr>
-                                <td><img src="~/user/assets/storyimg/@story.Coverİmage" width="100px" height="100px" /></td>
-                                <td>@story.Name</td>
-                                <td>@story.CreatedDate.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
-                                <td>@story.UpdatedDate.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
-                                <td>
-                                @foreach (var category in story.StoryCategories)
-                                {
-                                if (category.Category.Name == null)
-                                {
-                                <span> - </span>
+                                    <tr>
+                                        <td><img src="~/user/assets/storyimg/@story.FirstImageUrl" width="70px" height="70px" /></td>
+                                        <td><img src="~/user/assets/storyimg/@story.SecondImageUrl" width="70px" height="70px" /></td>
+                                        <td>@story.NameAz</td>
+                                        <td>@story.CreatedTime.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
+                                        <td>@story.UpdatedTime?.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
+                                        <td>@story.Category.NameAz</td>
+                                        <td>
+                                            <a class="btn btn-success margin-top-10" asp-controller="story" asp-action="update" asp-route-id=@story.Id data-bs-original-title="" title=""> <span class="icon-pencil-alt"></span></a>
+                                            <a class="btn btn-danger" asp-controller="story" asp-action="delete" asp-route-id=@story.Id data-bs-original-title="" title=""> <span class="icon-trash"></span></a>
+                                        </td>
+                                    </tr>
                                 }
-                                else
-                                {
-                                <span>@category.Category.Name</span>
-                                }
-                                }
-                                </td>
-                                <td>@story.ViewCount</td>
-                                <td>
-                                <a class="btn btn-success" asp-controller="stories" asp-action="updatestory" asp-route-id=@story.Id data-bs-original-title="" title=""> <span class="icon-pencil-alt"></span></a>
-                                <a class="btn btn-danger" asp-controller="stories" asp-action="deletestory" asp-route-id=@story.Id data-bs-original-title="" title=""> <span class="icon-trash"></span></a>
-                                </td>
-                                </tr>
-                                }
-                                *@
                             </tbody>
                         </table>
                     </div>

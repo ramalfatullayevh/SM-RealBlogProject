@@ -40,8 +40,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Story/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcU3RvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Story/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcU3RvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Story/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcU3RvcnlcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/_ViewImports.cshtml]

@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\admin\assets\images\vito-placeholder-img\" />
+    <Folder Include="wwwroot\user\assets\storyimg\" />
   </ItemGroup>
 
 </Project>

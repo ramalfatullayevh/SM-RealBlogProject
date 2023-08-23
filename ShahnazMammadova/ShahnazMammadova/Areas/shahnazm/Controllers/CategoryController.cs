@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShahnazMammadova.DataAccessLayer.Context;
 using ShahnazMammadova.Models;
@@ -7,7 +6,7 @@ using ShahnazMammadova.ViewModels;
 
 namespace ShahnazMammadova.Areas.shahnazm.Controllers
 {
-	[Area("shahnazm")]
+    [Area("shahnazm")]
 	//[Authorize(Roles ="SuperAdmin")]
 	public class CategoryController : Controller
 	{
