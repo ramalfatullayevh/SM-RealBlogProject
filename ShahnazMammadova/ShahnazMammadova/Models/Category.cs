@@ -10,5 +10,6 @@ namespace ShahnazMammadova.Models
 
         public ICollection<Blog> Blogs { get; set; }
         public ICollection<Story> Stories { get; set; }
+        public ICollection<Slider> Sliders { get; set; }
     }
 }

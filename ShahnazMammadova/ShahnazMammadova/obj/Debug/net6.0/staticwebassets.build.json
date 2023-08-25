@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HvZG4Kcx/ggJJyKC5FFEggZyy5g42KcqBeWehYuc75o=",
+  "Hash": "kajy/o1Cta6QoRAdL0zZwKGw/Yn/oK5Z6e37mttVD2g=",
   "Source": "ShahnazMammadova",
   "BasePath": "_content/ShahnazMammadova",
   "Mode": "Default",
@@ -47411,6 +47411,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user\\assets\\blogimg\\ffdf1c9b-503e-4b86-90c0-d38bfee3b9falogoremove.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\user\\assets\\sliderimg\\172bf53f-dcfa-4fa6-8c4b-93101c1d7a62Believer - First 1 minute.mp4",
+      "SourceId": "ShahnazMammadova",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\",
+      "BasePath": "_content/ShahnazMammadova",
+      "RelativePath": "user/assets/sliderimg/172bf53f-dcfa-4fa6-8c4b-93101c1d7a62Believer - First 1 minute.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\assets\\sliderimg\\172bf53f-dcfa-4fa6-8c4b-93101c1d7a62Believer - First 1 minute.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\user\\assets\\sliderimg\\98ca66e6-3e54-4eac-89e2-bed717e61800Losemius (6).png",
+      "SourceId": "ShahnazMammadova",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\",
+      "BasePath": "_content/ShahnazMammadova",
+      "RelativePath": "user/assets/sliderimg/98ca66e6-3e54-4eac-89e2-bed717e61800Losemius (6).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\assets\\sliderimg\\98ca66e6-3e54-4eac-89e2-bed717e61800Losemius (6).png"
     },
     {
       "Identity": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\user\\assets\\storyimg\\1fae88b6-39e2-48c4-a5b5-5214a18f389fWhatsApp Image 2023-08-12 at 09.jpeg",

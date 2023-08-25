@@ -12,6 +12,7 @@ namespace ShahnazMammadova.DataAccessLayer.Context
 		public DbSet<Category> Categories { get; set; }	
 		public DbSet<Blog> Blogs { get; set; }	
 		public DbSet<Story> Stories { get; set; }	
+		public DbSet<Slider> Sliders { get; set; }	
 
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -22,6 +22,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\admin\assets\images\vito-placeholder-img\" />
     <Folder Include="wwwroot\user\assets\blogimg\" />
+    <Folder Include="wwwroot\user\assets\sliderimg\" />
     <Folder Include="wwwroot\user\assets\storyimg\" />
   </ItemGroup>
 

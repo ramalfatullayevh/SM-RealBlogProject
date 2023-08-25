@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewData["Title"] = "Qalereya Dəyişiklik Et - Shahnaz Mammadova";
+    Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
+}
+
+
+@model UpdateSliderVM
+
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Qalereya Düzəliş Et</h3>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="text-danger" asp-controller="slider" asp-action="index">Bütün Qalereya Bax...</a></li>
+                    </ol>
+                </div>
+                <div class="col-sm-6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header pb-0">
+                        <h5>Qalereya Düzəliş Et</h5>
+                    </div>
+                    <form class="form theme-form" class="needs-validation" novalidate="" method="post" enctype="multipart/form-data">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput5">Slider Adı (Azərbaycan dili)</label>
+                                        <input asp-for="NameAz" class="form-control btn-pill" id="validationCustom01" type="text">
+                                        <span asp-validation-for="NameAz" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput5">Slider Adı (İngilis dili)</label>
+                                        <input asp-for="NameEng" class="form-control btn-pill" id="validationCustom01" type="text">
+                                        <span asp-validation-for="NameEng" class="text-danger"></span>
+
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlInput5">Slider Adı (Rus dili)</label>
+                                        <input asp-for="NameRu" class="form-control btn-pill" id="validationCustom01" type="text">
+                                        <span asp-validation-for="NameRu" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="mb-3">
+                                        <label class="form-label" for="exampleFormControlSelect8">Slider Kateqoriyası</label>
+                                        <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-select btn-pill p-l-45 digits" id="exampleFormControlSelect8" multiple="">
+                                        </select>
+                                        <span asp-validation-for="CategoryId" class="text-danger"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row" style="margin-top:20px">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-12">
+                                            <label class="form-label">Şəkil (Əsas)</label><br />
+                                            <img src="~/user/assets/sliderimg/@Model.ImageUrl" width="150px" height="150px" />
+                                            <input asp-for="Image" class="form-control" type="file">
+                                            <span asp-validation-for="Image" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top:20px">
+                                <div class="col">
+                                    <div class="mb-3 row">
+                                        <div class="col-sm-12">
+                                            <label class="form-label">Video</label><br />
+                                            <video src="~/user/assets/sliderimg/@Model.VideoUrl" width="150px" height="150px" controls /></video>
+                                            <input asp-for="Video" class="form-control" type="file">
+                                            <span asp-validation-for="Video" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="card-footer text-end">
+                            <button class="btn btn-primary" type="submit">Əlavə Et</button>
+                            <a class="btn btn-light" asp-controller="slider" asp-action="index">İmtina Et</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+</div>

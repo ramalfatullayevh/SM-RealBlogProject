@@ -46,11 +46,7 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateBlogVM create)
         {
-            if (!ModelState.IsValid)
-            {
-                ViewBag.Categories = new SelectList(_context.Categories.Where(ctg => ctg.IsDeleted == false), nameof(Category.Id), nameof(Category.NameAz));
-                return View();
-            }
+            
             if (create.FirstImage != null)
             {
                 string result = create.FirstImage.CheckValidate("image/", 1000);
@@ -75,7 +71,11 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                     ModelState.AddModelError("Video", result);
                 }
             }
-
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Categories = new SelectList(_context.Categories.Where(ctg => ctg.IsDeleted == false), nameof(Category.Id), nameof(Category.NameAz));
+                return View();
+            }
             var blog = new Blog
             {
                 CreatedTime = DateTime.Now,
@@ -202,6 +202,11 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
             blog.IsDeleted = true;
             blog.DeletedTime = DateTime.Now;
             blog.IsPopular = false;
+
+            blog.FirstImageUrl.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
+            blog.SecondImageUrl.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
+            blog.VideoUrl.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
+
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

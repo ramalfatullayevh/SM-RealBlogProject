@@ -1,18 +1,19 @@
-﻿@{
-    ViewData["Title"] = "Bloqlar - Shahnaz Mammadova";
+﻿
+@{
+    ViewData["Title"] = "Qalereya - Shahnaz Mammadova";
     Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
 }
 
-@model ICollection<Blog>
+@model ICollection<Slider>
 <!-- Page Sidebar Ends-->
 <div class="page-body">
     <div class="container-fluid">
         <div class="page-header">
             <div class="row">
                 <div class="col-sm-6">
-                    <h3>Bloqlar</h3>
+                    <h3>Qalereya</h3>
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="text-danger" asp-controller="blog" asp-action="create">Yeni Bloq Yaz...</a></>
+                        <li class="breadcrumb-item"><a class="text-danger" asp-controller="slider" asp-action="create">Yeni Şəkil Video Yüklə...</a></>
                     </ol>
                 </div>
                 <div class="col-sm-6">
@@ -28,14 +29,13 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 style="text-align:center">Bütün Bloqlar</h5><span style="text-align:center">Yazdığınız bütün bloqlar aşağıdakı cədvəldən nəzarət edə bilərsiniz. <bold><span style="text-align:center" class="text-danger">Qeyd: Yeni bloq yazmaq üçün Yeni Bloq Yaz - a keçid edin.</span></bold></span>
+                        <h5 style="text-align:center">Qalereya</h5><span style="text-align:center">Yüklədiyiniz bütün şəkillərə aşağıdakı cədvəldən nəzarət edə bilərsiniz. <bold><span style="text-align:center" class="text-danger">Qeyd: Yeni şəkil əlavə etmək üçün Yeni Şəkil Video Yüklə - ə keçid edin.</span></bold></span>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-hover table-bordered">
                             <thead>
                                 <tr style="text-align:center">
                                     <th scope="col">Əsas Şəkil </th>
-                                    <th scope="col">Əlavə Şəkil </th>
                                     <th scope="col">Video</th>
                                     <th scope="col">Adı</th>
                                     <th scope="col">Yaranma Tarixi</th>
@@ -45,19 +45,18 @@
                                 </tr>
                             </thead>
                             <tbody style="text-align:center">
-                                @foreach (var blog in Model.Where(c => c.IsDeleted == false))
+                                @foreach (var slider in Model.Where(c => c.IsDeleted == false))
                                 {
                                     <tr>
-                                        <td><img src="~/user/assets/blogimg/@blog.FirstImageUrl" width="70px" height="70px" /></td>
-                                        <td><img src="~/user/assets/blogimg/@blog.SecondImageUrl" width="70px" height="70px" /></td>
-                                        <td><video src="~/user/assets/blogimg/@blog.VideoUrl" width="130px" height="70px" controls /></td>
-                                        <td>@blog.NameAz</td>
-                                        <td>@blog.CreatedTime.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
-                                        <td>@blog.UpdatedTime?.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
-                                        <td>@blog.Category.NameAz</td>
+                                        <td><img src="~/user/assets/sliderimg/@slider.ImageUrl" width="100px" height="70px" /></td>
+                                        <td><video src="~/user/assets/sliderimg/@slider.VideoUrl" width="140px" height="70px" controls /></td>
+                                        <td>@slider.NameAz</td>
+                                        <td>@slider.CreatedTime.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
+                                        <td>@slider.UpdatedTime?.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
+                                        <td>@slider.Category.NameAz</td>
                                         <td>
-                                            <a class="btn btn-success margin-top-10" asp-controller="blog" asp-action="update" asp-route-id=@blog.Id data-bs-original-title="" title=""> <span class="icon-pencil-alt"></span></a>
-                                            <a class="btn btn-danger" asp-controller="blog" asp-action="delete" asp-route-id=@blog.Id data-bs-original-title="" title=""> <span class="icon-trash"></span></a>
+                                            <a class="btn btn-success margin-top-10" asp-controller="slider" asp-action="update" asp-route-id=@slider.Id data-bs-original-title="" title=""> <span class="icon-pencil-alt"></span></a>
+                                            <a class="btn btn-danger" asp-controller="slider" asp-action="delete" asp-route-id=@slider.Id data-bs-original-title="" title=""> <span class="icon-trash"></span></a>
                                         </td>
                                     </tr>
                                 }
@@ -70,6 +69,4 @@
     </div>
     <!-- Container-fluid Ends-->
 </div>
-
-
 

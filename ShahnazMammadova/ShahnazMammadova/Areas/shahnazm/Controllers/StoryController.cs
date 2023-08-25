@@ -66,7 +66,11 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                     ModelState.AddModelError("Image", result);
                 }
             }
-
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Categories = new SelectList(_context.Categories.Where(ctg => ctg.IsDeleted == false), nameof(Category.Id), nameof(Category.NameAz));
+                return View();
+            }
             var story = new Story
             {
                 CreatedTime = DateTime.Now, 
@@ -180,8 +184,12 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
 
             story.IsDeleted = true; 
             story.DeletedTime = DateTime.Now; 
-            story.IsPopular = false; 
-            
+            story.IsPopular = false;
+
+            story.FirstImageUrl.DeleteFile(_env.WebRootPath, "user/assets/storyimg");
+            story.SecondImageUrl.DeleteFile(_env.WebRootPath, "user/assets/storyimg");
+
+
             await _context.SaveChangesAsync();  
             return RedirectToAction(nameof(Index)); 
         }
