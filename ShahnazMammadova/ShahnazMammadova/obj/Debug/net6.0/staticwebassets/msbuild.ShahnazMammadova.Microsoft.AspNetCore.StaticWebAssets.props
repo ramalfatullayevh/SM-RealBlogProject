@@ -44640,12 +44640,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\blogimg\ffdf1c9b-503e-4b86-90c0-d38bfee3b9falogoremove.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\0f665d7f-0cbf-48cc-9bfb-e2b4e3f0d7ce[Heather X Traitor] Heather The.mp4))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\1b8da4d4-ad68-4d58-ad63-01840944e42c[Heather X Traitor] Heather The.mp4))">
       <SourceType>Package</SourceType>
       <SourceId>ShahnazMammadova</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ShahnazMammadova</BasePath>
-      <RelativePath>user/assets/sliderimg/0f665d7f-0cbf-48cc-9bfb-e2b4e3f0d7ce[Heather X Traitor] Heather The.mp4</RelativePath>
+      <RelativePath>user/assets/sliderimg/1b8da4d4-ad68-4d58-ad63-01840944e42c[Heather X Traitor] Heather The.mp4</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -44654,14 +44654,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\0f665d7f-0cbf-48cc-9bfb-e2b4e3f0d7ce[Heather X Traitor] Heather The.mp4))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\1b8da4d4-ad68-4d58-ad63-01840944e42c[Heather X Traitor] Heather The.mp4))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\162635f2-df47-46c5-91a2-fbc26644ba85Losemius (9).png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\23aff400-ab20-499f-aace-58ab28116446Losemius (5).png))">
       <SourceType>Package</SourceType>
       <SourceId>ShahnazMammadova</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ShahnazMammadova</BasePath>
-      <RelativePath>user/assets/sliderimg/162635f2-df47-46c5-91a2-fbc26644ba85Losemius (9).png</RelativePath>
+      <RelativePath>user/assets/sliderimg/23aff400-ab20-499f-aace-58ab28116446Losemius (5).png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -44670,14 +44670,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\162635f2-df47-46c5-91a2-fbc26644ba85Losemius (9).png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\23aff400-ab20-499f-aace-58ab28116446Losemius (5).png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\33e185ec-ff9b-4222-9278-ab95ccb43a81[Heather X Traitor] Heather The.mp4))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\66de850f-1242-4876-a3b4-bad8ca59f19b[Heather X Traitor] Heather The.mp4))">
       <SourceType>Package</SourceType>
       <SourceId>ShahnazMammadova</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ShahnazMammadova</BasePath>
-      <RelativePath>user/assets/sliderimg/33e185ec-ff9b-4222-9278-ab95ccb43a81[Heather X Traitor] Heather The.mp4</RelativePath>
+      <RelativePath>user/assets/sliderimg/66de850f-1242-4876-a3b4-bad8ca59f19b[Heather X Traitor] Heather The.mp4</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -44686,14 +44686,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\33e185ec-ff9b-4222-9278-ab95ccb43a81[Heather X Traitor] Heather The.mp4))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\66de850f-1242-4876-a3b4-bad8ca59f19b[Heather X Traitor] Heather The.mp4))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\5ebe5c79-eaf5-4993-b24e-c9e50b50e099Losemius (7).png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\6bf2ed0f-0de9-4360-aa53-208e1fcc3521Losemius.png))">
       <SourceType>Package</SourceType>
       <SourceId>ShahnazMammadova</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ShahnazMammadova</BasePath>
-      <RelativePath>user/assets/sliderimg/5ebe5c79-eaf5-4993-b24e-c9e50b50e099Losemius (7).png</RelativePath>
+      <RelativePath>user/assets/sliderimg/6bf2ed0f-0de9-4360-aa53-208e1fcc3521Losemius.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -44702,14 +44702,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\5ebe5c79-eaf5-4993-b24e-c9e50b50e099Losemius (7).png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\6bf2ed0f-0de9-4360-aa53-208e1fcc3521Losemius.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\a034c582-24c5-4531-8129-a197f0b517c4Losemius (5).png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\7727c666-939c-49ee-9005-af7841ff6d7dLosemius (2).png))">
       <SourceType>Package</SourceType>
       <SourceId>ShahnazMammadova</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ShahnazMammadova</BasePath>
-      <RelativePath>user/assets/sliderimg/a034c582-24c5-4531-8129-a197f0b517c4Losemius (5).png</RelativePath>
+      <RelativePath>user/assets/sliderimg/7727c666-939c-49ee-9005-af7841ff6d7dLosemius (2).png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -44718,7 +44718,23 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\a034c582-24c5-4531-8129-a197f0b517c4Losemius (5).png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\7727c666-939c-49ee-9005-af7841ff6d7dLosemius (2).png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\f276e8ee-2b02-43d6-8d96-79365aa558b3[Heather X Traitor] Heather The.mp4))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShahnazMammadova</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShahnazMammadova</BasePath>
+      <RelativePath>user/assets/sliderimg/f276e8ee-2b02-43d6-8d96-79365aa558b3[Heather X Traitor] Heather The.mp4</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\sliderimg\f276e8ee-2b02-43d6-8d96-79365aa558b3[Heather X Traitor] Heather The.mp4))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\user\assets\storyimg\1fae88b6-39e2-48c4-a5b5-5214a18f389fWhatsApp Image 2023-08-12 at 09.jpeg))">
       <SourceType>Package</SourceType>
