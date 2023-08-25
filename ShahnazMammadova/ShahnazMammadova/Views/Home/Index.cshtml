@@ -3,6 +3,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model ICollection<Slider>
+
 <main id="body-inner">
     <div id="page-transition">
         <div class="ptr-overlay"></div>
@@ -366,157 +368,47 @@
 
                         <!-- Begin swiper wrapper (required) -->
                         <div class="swiper-wrapper">
+                            @foreach (var sliders in Model)
+                            {
+                                <div class="swiper-slide" data-slide="@sliders.Id">
+                                    <!-- Begin portfolio hover carousel item
+                                    ========================================= -->
+                                    <a href="#" class="tt-phc-item"  data-cursor="View<br>Project">
+                                        <h2 class="tt-phc-item-title">@sliders.NameAz</h2> <!-- You may need to adjust the font size to suit your needs. -->
+                                        <div class="tt-phc-categories">
+                                            <div class="tt-phc-category">@sliders.Category.NameAz</div>
+                                            <!-- <div class="tt-phc-category">Varia</div> -->
+                                        </div> <!-- /.tt-phc-categories -->
+                                    </a>
+                                    <!-- End portfolio hover carousel item -->
 
-                            <!-- Begin swiper slide
-                            ======================== -->
-                            <div class="swiper-slide" data-slide="1">
-
-                                <!-- Begin portfolio hover carousel item
-                                ========================================= -->
-                                <a href="single-project-9.html" class="tt-phc-item" data-number="01" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Victorian<br> Girls</h2> <!-- You may need to adjust the font size to suit your needs. -->
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">People</div>
-                                        <!-- <div class="tt-phc-category">Varia</div> -->
-                                    </div> <!-- /.tt-phc-categories -->
-                                </a>
-                                <!-- End portfolio hover carousel item -->
-
-                            </div>
-                            <!-- End swiper slide -->
-                            <!-- Begin swiper slide
-                            ======================== -->
-                            <div class="swiper-slide" data-slide="2">
-
-                                <!-- Begin portfolio hover carousel item
-                                ========================================= -->
-                                <a href="single-project-2.html" class="tt-phc-item" data-number="02" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Smithy</h2> <!-- You may need to adjust the font size to suit your needs. -->
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">Creative</div>
-                                        <!-- <div class="tt-phc-category">Varia</div> -->
-                                    </div> <!-- /.tt-phc-categories -->
-                                </a>
-                                <!-- End portfolio hover carousel item -->
-
-                            </div>
-                            <!-- End swiper slide -->
-                            <!-- Begin swiper slide
-                            ======================== -->
-                            <div class="swiper-slide" data-slide="3">
-
-                                <!-- Begin portfolio hover carousel item
-                                ========================================= -->
-                                <a href="single-project-3.html" class="tt-phc-item" data-number="03" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Fashion<br> Week</h2> <!-- You may need to adjust the font size to suit your needs. -->
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">People</div>
-                                        <!-- <div class="tt-phc-category">Varia</div> -->
-                                    </div> <!-- /.tt-phc-categories -->
-                                </a>
-                                <!-- End portfolio hover carousel item -->
-
-                            </div>
-                            <div class="swiper-slide" data-slide="4">
-                                <a href="single-project-4.html" class="tt-phc-item" data-number="04" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Mystery<br> Forest</h2>
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">Nature</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide" data-slide="5">
-
-                                <a href="single-project-5.html" class="tt-phc-item" data-number="05" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Red<br> Package</h2>
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">Branding</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide" data-slide="6">
-                                <a href="single-project-6.html" class="tt-phc-item" data-number="06" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Studio<br> Shoot</h2>
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">People</div>
-                                    </div> <
-                                </a>
-                            </div>
-                            <div class="swiper-slide" data-slide="7">
-
-                                <a href="single-project-7.html" class="tt-phc-item" data-number="07" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Breaking<br> Wave</h2>
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">Nature</div>
-                                    </div>
-                                </a>
-
-                            </div>
-                            <div class="swiper-slide" data-slide="8">
-                                <a href="single-project-8.html" class="tt-phc-item" data-number="08" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Wall<br> Lamp</h2>
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">Branding</div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide" data-slide="9">
-                                <a href="single-project-1.html" class="tt-phc-item" data-number="09" data-cursor="View<br>Project">
-                                    <h2 class="tt-phc-item-title">Elegant<br> Stoves</h2>
-                                    <div class="tt-phc-categories">
-                                        <div class="tt-phc-category">Creative</div>
-                                    </div>
-                                </a>
-                            </div>
+                                </div>
+                              
+                            }
                         </div>
                     </div>
                     <div class="tt-portfolio-hover-carousel-images">
-                        <div class="phc-images-inner">
-                            <div class="phc-image cover-opacity-4" data-slide="1">
-                                <img src="assets/img/portfolio/portfolio-1.jpg" alt="image">
-                            </div>
-                            <div class="phc-image cover-opacity-4" data-slide="2">
-                                <img src="assets/img/portfolio/portfolio-2.jpg" alt="image">
-                            </div>
-                            <div class="phc-image cover-opacity-4" data-slide="3">
-                                <video class="phc-video" loop muted preload="metadata" poster="assets/vids/fashion-week.jpg">
-                                    <source src="assets/vids/fashion-week.mp4" type="video/mp4">
-                                    <source src="assets/vids/fashion-week.webm" type="video/webm">
-                                </video>
-                            </div>
-                            <div class="phc-image cover-opacity-4" data-slide="4">
-                                <img src="assets/img/portfolio/portfolio-3.jpg" alt="image">
-                            </div>
-                            <div class="phc-image cover-opacity-4" data-slide="5">
-                                <img src="assets/img/portfolio/portfolio-4.jpg" alt="image">
-                            </div>
-                            <div class="phc-image cover-opacity-4" data-slide="6">
-                                <img src="assets/img/portfolio/portfolio-5.jpg" alt="image">
-                            </div>
-                            <div class="phc-image cover-opacity-4" data-slide="7">
-                                <img src="assets/img/portfolio/portfolio-6.jpg" alt="image">
-                            </div>
-                            <div class="phc-image cover-opacity-4 phc-image-is-light" data-slide="8">
-                                <img src="assets/img/portfolio/portfolio-7.jpg" alt="image">
-                            </div>
-                            <div class="phc-image cover-opacity-4" data-slide="9">
-                                <img src="assets/img/portfolio/portfolio-8.jpg" alt="image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tt-phc-counter tt-swiper-nav">
-                        <div class="tt-phc-count">
-                            <span data-slide="1">1</span>
-                            <span data-slide="2">2</span>
-                            <span data-slide="3">3</span>
-                            <span data-slide="4">4</span>
-                            <span data-slide="5">5</span>
-                            <span data-slide="6">6</span>
-                            <span data-slide="7">7</span>
-                            <span data-slide="8">8</span>
-                            <span data-slide="9">9</span>
-                        </div>
-                        <div class="tt-phc-counter-separator"></div>
+                        @foreach (var sliders in Model)
+                        {
+                            if (sliders.VideoUrl is not null)
+                            {
+                                <div class="phc-image cover-opacity-4" data-slide="@sliders.Id">
+                                    <video class="phc-video" loop muted preload="metadata" poster="assets/vids/fashion-week.jpg">
+                                        <source src="~/user/assets/sliderimg/@sliders.VideoUrl" type="video/mp4">
+                                    </video>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="phc-images-inner">
+                                    <div class="phc-image cover-opacity-4" data-slide="@sliders.Id">
+                                        <img src="~/user/assets/sliderimg/@sliders.ImageUrl" alt="image">
+                                    </div>
+
+                                </div>
+                            }
+                        }
+                        
                     </div>
                 </div>
             </div>

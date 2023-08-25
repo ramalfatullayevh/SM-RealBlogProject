@@ -112,11 +112,11 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateSliderVM update)
         {
-            if (!ModelState.IsValid) return View(update);
             if (id is null) return BadRequest();
             var slider = await _context.Sliders.FindAsync(id);
             if (slider is null) return NotFound();
 
+            if (!ModelState.IsValid) return View(update);
             ViewBag.Categories = new SelectList(_context.Categories.Where(ctg => ctg.IsDeleted == false), nameof(Category.Id), nameof(Category.NameAz));
 
             slider.UpdatedTime = DateTime.Now;
