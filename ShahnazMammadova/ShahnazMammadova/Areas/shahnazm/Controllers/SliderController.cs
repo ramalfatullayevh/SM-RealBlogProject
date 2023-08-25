@@ -76,7 +76,7 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                 NameEng = create.NameEng,
                 CategoryId = create.CategoryId,
                 ImageUrl = create.Image.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "sliderimg")),
-                VideoUrl = create.Video.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "sliderimg"))
+                VideoUrl = create.Video?.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "sliderimg"))
             };
 
             await _context.Sliders.AddAsync(slider);
@@ -145,8 +145,8 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                     ModelState.AddModelError("Video", result);
                 }
 
-                slider.VideoUrl.DeleteFile(_env.WebRootPath, "user/assets/sliderimg");
-                slider.VideoUrl = update.Video.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "sliderimg"));
+                slider.VideoUrl?.DeleteFile(_env.WebRootPath, "user/assets/sliderimg");
+                slider.VideoUrl = update.Video?.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "sliderimg"));
             }
 
             await _context.SaveChangesAsync();
@@ -165,7 +165,7 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
             slider.DeletedTime = DateTime.Now;
 
             slider.ImageUrl.DeleteFile(_env.WebRootPath, "user/assets/sliderimg");
-            slider.VideoUrl.DeleteFile(_env.WebRootPath, "user/assets/sliderimg");
+            slider.VideoUrl?.DeleteFile(_env.WebRootPath, "user/assets/sliderimg");
 
 
             await _context.SaveChangesAsync();

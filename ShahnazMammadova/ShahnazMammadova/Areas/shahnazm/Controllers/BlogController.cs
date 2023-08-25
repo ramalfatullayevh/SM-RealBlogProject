@@ -89,8 +89,8 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                 CategoryId = create.CategoryId,
                 IsPopular = create.IsPopular,
                 FirstImageUrl = create.FirstImage.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg")),
-                SecondImageUrl = create.SecondImage.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg")),
-                VideoUrl = create.Video.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg"))
+                SecondImageUrl = create.SecondImage?.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg")),
+                VideoUrl = create.Video?.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg"))
             };
 
             await _context.Blogs.AddAsync(blog);
@@ -170,8 +170,8 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                     ModelState.AddModelError("Image", result);
                 }
 
-                blog.SecondImageUrl.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
-                blog.SecondImageUrl = update.SecondImage.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg"));
+                blog.SecondImageUrl?.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
+                blog.SecondImageUrl = update.SecondImage?.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg"));
             }
 
             if (update.Video != null)
@@ -182,8 +182,8 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                     ModelState.AddModelError("Video", result);
                 }
 
-                blog.VideoUrl.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
-                blog.VideoUrl = update.Video.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg"));
+                blog.VideoUrl?.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
+                blog.VideoUrl = update.Video?.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "blogimg"));
             }
 
             await _context.SaveChangesAsync();
@@ -204,8 +204,8 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
             blog.IsPopular = false;
 
             blog.FirstImageUrl.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
-            blog.SecondImageUrl.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
-            blog.VideoUrl.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
+            blog.SecondImageUrl?.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
+            blog.VideoUrl?.DeleteFile(_env.WebRootPath, "user/assets/blogimg");
 
 
             await _context.SaveChangesAsync();

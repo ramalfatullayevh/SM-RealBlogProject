@@ -84,7 +84,7 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                 CategoryId = create.CategoryId, 
                 IsPopular = create.IsPopular,   
                 FirstImageUrl = create.FirstImage.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "storyimg")),
-                SecondImageUrl = create.SecondImage.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "storyimg")),
+                SecondImageUrl = create.SecondImage?.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "storyimg")),
             };
 
             await _context.Stories.AddAsync(story);  
@@ -165,8 +165,8 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
                     ModelState.AddModelError("Image", result);
                 }
 
-                story.SecondImageUrl.DeleteFile(_env.WebRootPath, "user/assets/storyimg");
-                story.SecondImageUrl = update.SecondImage.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "storyimg"));
+                story.SecondImageUrl?.DeleteFile(_env.WebRootPath, "user/assets/storyimg");
+                story.SecondImageUrl = update.SecondImage?.SaveFile(Path.Combine(_env.WebRootPath, "user", "assets", "storyimg"));
             }
 
             await _context.SaveChangesAsync();
@@ -187,7 +187,7 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
             story.IsPopular = false;
 
             story.FirstImageUrl.DeleteFile(_env.WebRootPath, "user/assets/storyimg");
-            story.SecondImageUrl.DeleteFile(_env.WebRootPath, "user/assets/storyimg");
+            story.SecondImageUrl?.DeleteFile(_env.WebRootPath, "user/assets/storyimg");
 
 
             await _context.SaveChangesAsync();  

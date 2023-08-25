@@ -19,7 +19,7 @@ namespace ShahnazMammadova.ViewModels
         public Category? Category { get; set; }
 
         public IFormFile FirstImage { get; set; }
-        public IFormFile SecondImage { get; set; }
-        public IFormFile Video { get; set; }
+        public IFormFile? SecondImage { get; set; }
+        public IFormFile? Video { get; set; }
     }
 }

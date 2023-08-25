@@ -14,7 +14,7 @@ namespace ShahnazMammadova.ViewModels
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
 
-        public IFormFile Image { get; set; }
+        public IFormFile? Image { get; set; }
         public IFormFile? Video { get; set; }
     }
 }
