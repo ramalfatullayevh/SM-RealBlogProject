@@ -13,9 +13,11 @@ namespace ShahnazMammadova.Models
         public string FirstImageUrl { get; set; }
         public string? SecondImageUrl { get; set; }
         public bool IsPopular { get; set; }
+		public int ViewCount { get; set; }
 
 
-        public int CategoryId { get; set; }
+
+		public int CategoryId { get; set; }
         public Category Category { get; set; }
     }
 }

@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShahnazMammadova.DataAccessLayer.Context;
+using ShahnazMammadova.Models;
 using ShahnazMammadova.ViewModels;
 
 namespace ShahnazMammadova.Controllers
@@ -8,13 +10,14 @@ namespace ShahnazMammadova.Controllers
     public class LandingController : Controller
     {
         readonly AppDBContext _context;
+      
 
-        public LandingController(AppDBContext context)
-        {
-            _context = context;
-        }
+		public LandingController(AppDBContext context)
+		{
+			_context = context;
+		}
 
-        public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index()
         {
             LandingVM landing = new LandingVM
             {
@@ -23,6 +26,6 @@ namespace ShahnazMammadova.Controllers
             };
             return View(landing);
         }
-    }
+	}
 }
     

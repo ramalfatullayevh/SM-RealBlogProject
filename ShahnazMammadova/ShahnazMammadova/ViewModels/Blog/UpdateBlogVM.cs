@@ -14,8 +14,10 @@ namespace ShahnazMammadova.ViewModels
         public string DescriptionEng { get; set; }
         public string? VideoUrl { get; set; }
         public bool IsPopular { get; set; }
+		public int ViewCount { get; set; }
 
-        public int CategoryId { get; set; }
+
+		public int CategoryId { get; set; }
         public Category? Category { get; set; }
 
         public IFormFile? FirstImage { get; set; }

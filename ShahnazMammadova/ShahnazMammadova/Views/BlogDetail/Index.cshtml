@@ -1,10 +1,11 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = $"{Model.NameAz} - Shahnaz Mammadova" ;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@model Blog 
 <main id="body-inner">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Begin page transition (do not remove!!!)
 	=========================== -->
@@ -410,7 +411,7 @@
 					============================= -->
 					<div class="ph-image">
 						<div class="ph-image-inner">
-							<img src="assets/img/page-header/blog-ph/blog-ph-1.jpg" alt="Image">
+							<img src="~/user/assets/blogimg/@Model.FirstImageUrl" alt="Image">
 						</div>
 					</div>
 					<!-- End page header image -->
@@ -420,15 +421,22 @@
 					-->
 					<div class="ph-caption">
 						<div class="ph-categories ph-appear">
-							<a href="blog-archive.html" class="ph-category">Lifestyle</a>
+							<a href="blog-archive.html" class="ph-category">@Model.Category.NameAz</a>
 							<!-- <a href="blog-archive.html" class="ph-category">Uncategorized</a> -->
 						</div> <!-- /.ph-categories -->
 
-						<h2 class="ph-caption-title ph-appear">Want to Step Up Your Skills? You Need to Read This First</h2> <!-- You can use <br class="hide-from-lg"> to break a text line if needed -->
+						<h2 class="ph-caption-title ph-appear">@Model.NameAz</h2> <!-- You can use <br class="hide-from-lg"> to break a text line if needed -->
 
 						<div class="ph-meta ph-appear">
-							<span class="ph-meta-published">May 26, 2021</span>
-							<span class="ph-meta-posted-by">by: <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
+							<span class="ph-meta-published">
+								@if (Model.UpdatedTime is null)
+								{
+									@Model.CreatedTime.ToString("MM/dd/yyyy")
+
+								}
+								@Model.UpdatedTime?.ToString("MM/dd/yyyy")
+							</span>
+							<span class="ph-meta-posted-by">Yazar: <a href="blog-archive.html">Şahnaz Məmmədova</a></span>
 						</div> <!-- /.ph-meta -->
 					</div>
 					<!-- End page header caption -->
@@ -513,58 +521,42 @@
 
 								<h3>Heading</h3>
 
-								<p>Tank is a creative portfolio showcase HTML website template. Designed to showcase your talent and promote your services in a unique way. Attachment apartments in delightful by motionless it no. And now she burst sir learn total. Hearing hearted shewing own ask. Solicitude uncommonly use her business not collecting age. The properly agencies required mistaken outlived bed and. Remainder admitting neglected is he belonging.</p>
+								<p>@Model.DescriptionAz</p>
 
-								<p>Maids creative how learn drift but freelancers stand yet set. Smooth GSAP (TweenMax) animations. Piqued our sister shy nature almost his wicket. Hand dear so we hour to. He we be hastily influencers effects he service. Sympathize it <a href="https://1.envato.market/tank" target="_blank" rel="noopener">senectus nec ipsum</a> celebrated my pianoforte indulgence. Tank is extremely flexible showcase template. Elegance exercise as laughing proposal mistaken if. We up modern an it photography portfolio invitation.</p>
 
 								<!-- Begin post image -->
-								<figure class="tt-blog-post-image">
-									<a href="assets/img/blog/single/blog-post-1.jpg" class="tt-bpi-link lg-trigger" data-exthumbnail="assets/img/blog/single/thumb/img-4.jpg" data-cursor="View">
-										<img class="tt-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/single/blog-post-1.jpg" alt="image">
-									</a>
-									<figcaption class="tt-bpi-caption">
-										Photo by <a href="http://unsplash.com/" target="_blank" rel="noopener">Unsplash</a>
-									</figcaption>
-								</figure>
+								@if (Model.SecondImageUrl is not null)
+								{
+									<figure class="tt-blog-post-image">
+										<a href="assets/img/blog/single/blog-post-1.jpg" class="tt-bpi-link lg-trigger" data-exthumbnail="~/user/assets/blogimg/@Model.SecondImageUrl" data-cursor="View">
+											<img class="tt-lazy" src="~/user/assets/blogimg/@Model.SecondImageUrl" data-src="~/user/assets/blogimg/@Model.SecondImageUrl" alt="image">
+										</a>
+										<figcaption class="tt-bpi-caption">
+											Photo by <a href="http://unsplash.com/" target="_blank" rel="noopener">Şahnaz Mammadova</a>
+										</figcaption>
+									</figure>
+									
+								}
 								<!-- End post image -->
 
-								<p>Is at purse tried website china ready decay parallax. Small its shy way had woody downs power. To denoting admitted speaking learning my exercise so in. Procured shutters its feelings. To or three offer well commented am at. As dissuade cheerfully overcame so of friendly he indulged unpacked. Alteration connection to so as collecting me. Difficult in delivered extensive at direction allowance. Alteration put use diminution can be considered.</p>
-
-								<blockquote class="open-quote">
-									"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking."
-									<footer>Steve Jobs</footer>
-								</blockquote>
-
-								<p>Folly was these three and songs arose whose. Of in vicinity contempt together in possible branched. Assured company hastily looking garrets in oh. Most have love my gone to this so. Discovered interested prosperous the our affronting insipidity day. Missed lovers way one vanity wishes nay but. Use shy seemed within twenty wished old few regrets passed. Absolute one hastened mrs any sensible.</p>
+								<p>@Model.DescriptionAz</p>
 
 								<br>
 
-								<h3>Embed video</h3>
-
-								<p>Now indulgence dissimilar for his thoroughly has responsive. Agreement offending commanded my an. Change wholly say why eldest period. Are projection put celebrated particular unreserved joy unsatiable its? In then dare good am rose bred or. On am in nearer square wanted.</p>
 
 								<!-- Begin tt-Embed (YouTube video) -->
-								<div class="tt-embed hide-cursor">
-									<iframe class="tt-embed-item" data-src="https://www.youtube.com/embed/cJ_bnfIJpKM" allowfullscreen=""></iframe>
-								</div>
-								<!-- End tt-Embed -->
-								<!-- Begin tt-Embed (Vimeo video) -->
-								<!-- <div class="tt-embed hide-cursor">
-									<iframe class="tt-embed-item" data-src="https://player.vimeo.com/video/78194687" allowfullscreen=""></iframe>
-								</div> -->
-								<!-- End tt-Embed -->
+								@if (Model.VideoUrl is not null)
+								{
+									<h3>Embed video</h3>
+									<div class="tt-embed hide-cursor">
+										<video class="tt-embed-item" src="~/user/assets/blogimg/@Model.VideoUrl" controls  allowfullscreen=""></video>
+									</div>
+								}
+								
 
 							</div>
 							<!-- End blog post content -->
 							<!-- Begin blog post tags -->
-							<div class="tt-blog-post-tags">
-								<ul>
-									<li><span>Tags:</span></li>
-									<li><a href="blog-archive.html">#photography</a></li>
-									<li><a href="blog-archive.html">#travel</a></li>
-									<li><a href="blog-archive.html">#motion</a></li>
-								</ul>
-							</div>
 							<!-- End blog post tags -->
 							<!-- Begin blog post share (Note: for design purposes only!)
 							===========================
@@ -586,177 +578,93 @@
 						<!-- End blog post -->
 						<!-- Begin blog post nav
 						======================== -->
+						@{
+							
+							var postId = Model.Id;
+							int previousId = postId - 1;
+							int nextId = postId + 1;
+
+							
+						}
+
 						<div class="tt-blog-post-nav">
 							<div class="tt-bp-nav-col tt-bp-nav-left">
-								<div class="tt-bp-nav-text"><span><i class="fas fa-angle-left"></i></span>Prew Post</div>
-								<h4 class="tt-bp-nav-title"><a href="#">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h4>
+								@if (previousId > 0)
+								{
+									<div class="tt-bp-nav-text"><span><i class="fas fa-angle-left"></i></span>Previous Post</div>
+									<h4 class="tt-bp-nav-title"><a href="@Url.Action("index", "blogdetail", new { id = previousId })">Previous Post Title</a></h4>
+								}
 							</div>
 							<div class="tt-bp-nav-col tt-bp-nav-right">
-								<div class="tt-bp-nav-text">Next Post<span><i class="fas fa-angle-right"></i></span></div>
-								<h4 class="tt-bp-nav-title"><a href="#">Why Some People Almost Always Save Money With This Method</a></h4>
+								@if (nextId > 0 && nextId<=ViewBag.LastPostId)
+								{
+									<div class="tt-bp-nav-text">Next Post<span><i class="fas fa-angle-right"></i></span></div>
+									<h4 class="tt-bp-nav-title"><a href="@Url.Action("index", "blogdetail", new { id = nextId })">Next Post Title</a></h4>
+								}
 							</div>
 						</div>
 						<!-- End blog post nav -->
 						<!-- Begin post comments
 						========================= -->
 						<div id="tt-blog-post-comments">
+								<h4 class="tt-bpc-heading">@Model.BlogComments.Count comments:</h4>
+							@foreach (var comments in Model.BlogComments)
+							{
+								
+								<ul class="tt-comments-list">
 
-							<h4 class="tt-bpc-heading">5 comments:</h4>
+									<li class="tt-comment">
+										<a href="#" class="tt-comment-avatar">
+											<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+										</a>
+										<div class="tt-comment-body">
+											<div class="tt-comment-meta">
+												<h4 class="tt-comment-heading"><a href="#">@comments.User.UserName.ToLower()</a></h4>
+												<span class="tt-comment-time">@comments.ReviewDate.ToString("MM/dd/yyyy")</span>
+											</div>
+											<span class="tt-comment-reply"><a href="javascript:void(0);">Reply</a></span>
+											<div class="tt-comment-text">
+												<p>@comments.ReviewContent</p>
+											</div> <!-- /.tt-comment-text -->
+											<!-- Begin tt comments list
+											============================ -->
+											<ul class="tt-comments-list">
+												@foreach (var reply in comments.Replies)
+												{
+													<li class="tt-comment">
+														<a href="#" class="tt-comment-avatar">
+															<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+														</a>
+														<div class="tt-comment-body">
+															<div class="tt-comment-meta">
+																<h4 class="tt-comment-heading"><a href="#">@reply.User.UserName.ToLower()</a></h4>
+																<span class="tt-comment-time">@reply.ReviewDate.ToString("MM/dd/yyyy")</span>
+															</div>
+															<span class="tt-comment-reply"><a href="#" class="show-reply-form">Reply</a></span>
+															<div class="tt-comment-text">
+																<p>@reply.ReviewContent</p>
+															</div> 
+														</div> 
+													</li>
+													
+												}
+											</ul>
+											<!-- End tt comments list -->
 
-							<!-- Begin tt-Comments list
-							============================ -->
-							<ul class="tt-comments-list">
+										</div> <!-- /.tt-comment-body -->
+									</li>
 
-								<!-- Begin tt-comment -->
-								<li class="tt-comment">
-									<a href="#" class="tt-comment-avatar">
-										<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-									</a>
-									<div class="tt-comment-body">
-										<div class="tt-comment-meta">
-											<h4 class="tt-comment-heading"><a href="#">David Bradley</a></h4>
-											<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-										</div>
-										<span class="tt-comment-reply"><a href="#">Reply</a></span>
-										<div class="tt-comment-text">
-											<p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may. Wicket do manner others seemed enable rather in. Excellent own discovery unfeeling.</p>
-										</div> <!-- /.tt-comment-text -->
-									</div> <!-- /.tt-comment-body -->
-								</li>
-								<!-- End tt-comment -->
-								<!-- Begin tt-comment -->
-								<li class="tt-comment">
-									<a href="#" class="tt-comment-avatar">
-										<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-									</a>
-									<div class="tt-comment-body">
-										<div class="tt-comment-meta">
-											<h4 class="tt-comment-heading"><a href="#">Katie Ryan</a></h4>
-											<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-										</div>
-										<span class="tt-comment-reply"><a href="#">Reply</a></span>
-										<div class="tt-comment-text">
-											<p>Unfeeling so rapturous discovery he exquisite. Reasonably so middletons or impression by terminated. Old pleasure required removing elegance him had. Down she bore sing saw calm high. Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-										</div> <!-- /.tt-comment-text -->
-										<!-- Begin tt comments list
-										============================ -->
-										<ul class="tt-comments-list">
-
-											<!-- Begin tt-comment -->
-											<li class="tt-comment">
-												<a href="#" class="tt-comment-avatar">
-													<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-												</a>
-												<div class="tt-comment-body">
-													<div class="tt-comment-meta">
-														<h4 class="tt-comment-heading"><a href="#">John Doe</a></h4>
-														<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-													</div>
-													<span class="tt-comment-reply"><a href="#">Reply</a></span>
-													<div class="tt-comment-text">
-														<p>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he. Could death since do we hoped is in. Exquisite no my attention extensive. The determine conveying moonlight age. Avoid for see marry sorry child.</p>
-													</div> <!-- /.tt-comment-text -->
-												</div> <!-- /.tt-comment-body -->
-											</li>
-											<!-- End tt-comment -->
-											<!-- Begin tt-comment -->
-											<li class="tt-comment">
-												<a href="#" class="tt-comment-avatar">
-													<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-												</a>
-												<div class="tt-comment-body">
-													<div class="tt-comment-meta">
-														<h4 class="tt-comment-heading"><a href="#">Katie Ryan</a></h4>
-														<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-													</div>
-													<span class="tt-comment-reply"><a href="#">Reply</a></span>
-													<div class="tt-comment-text">
-														<p>For norland produce age wishing. To figure on it spring season up. Her provision acuteness had excellent two why intention.</p>
-													</div> <!-- /.tt-comment-text -->
-												</div> <!-- /.tt-comment-body -->
-											</li>
-											<!-- End tt-comment -->
-
-										</ul>
-										<!-- End tt comments list -->
-
-									</div> <!-- /.tt-comment-body -->
-								</li>
-								<!-- End tt-comment -->
-								<!-- Begin tt-comment -->
-								<li class="tt-comment">
-									<a href="#" class="tt-comment-avatar">
-										<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-									</a>
-									<div class="tt-comment-body">
-										<div class="tt-comment-meta">
-											<h4 class="tt-comment-heading"><a href="#">Kate Dixon</a></h4>
-											<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-										</div>
-										<span class="tt-comment-reply"><a href="#">Reply</a></span>
-										<div class="tt-comment-text">
-											<p>Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of.</p>
-										</div> <!-- /.tt-comment-text -->
-									</div> <!-- /.tt-comment-body -->
-								</li>
-								<!-- End tt-comment -->
-
-							</ul>
-							<!-- End tt-Comments list -->
-							<!-- Begin post comment form (Note: post comment form is for design purposes only!)
-							=============================
-							* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
-							* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
-							-->
-							<form id="tt-post-comment-form" class="tt-form-minimal anim-fadeinup">
-								<h4 class="tt-post-comment-form-heading">Leave a Comment:</h4>
-								<div class="tt-row">
-									<div class="tt-col-lg-6">
-
-										<div class="tt-form-group">
-											<label>Name <span class="required">*</span></label>
-											<input class="tt-form-control" id="84990245" type="text" placeholder="">
-										</div>
-
-									</div> <!-- /.col -->
-
-									<div class="tt-col-lg-6">
-
-										<div class="tt-form-group">
-											<label>Email address <span class="small text-gray">(Optional)</span></label>
-											<input class="tt-form-control" id="19833520" type="email" placeholder="">
-										</div>
-
-									</div> <!-- /.col -->
-								</div> <!-- /.row -->
-
-								<div class="tt-form-group">
-									<label>Comment <span class="required">*</span></label>
-									<textarea class="tt-form-control" id="30945381" rows="6" placeholder=""></textarea>
-								</div>
-
-								<small class="tt-form-text">Fields marked with an asterisk (*) are required!</small>
-
-								<!-- Begin post comment reminder -->
-								<div class="tt-post-comment-reminder">
-									<div class="tt-form-check tt-form-check-inline">
-										<input type="checkbox" id="notify-me-new-comment">
-										<label for="notify-me-new-comment">Email me when this comment receives a reply.</label>
-									</div>
-									<div class="tt-form-check">
-										<input type="checkbox" id="notify-me-new-post">
-										<label for="notify-me-new-post">Notify me of new posts by email.</label>
-									</div>
-								</div>
-								<!-- End post comment reminder -->
-								<!-- Begin post comment submit button -->
-								<div class="tt-btn tt-btn-light-outline margin-top-40">
-									<button type="submit" data-hover="Post Comment">Post Comment</button>
-								</div>
-								<!-- End post comment submit button -->
-
-							</form>
-							<!-- End post comment form -->
+								</ul>
+							}
+							
+							@if (User.Identity.IsAuthenticated)
+							{
+								BlogCommentVM reviewVM = new BlogCommentVM();
+								reviewVM.ReviewContent = "";
+								reviewVM.BlogId = Model.Id;
+								reviewVM.Blog = Model;
+								@await Html.PartialAsync("_AddCommentPartial", reviewVM, new ViewDataDictionary(ViewData){{"blogid" , Model.Id}})
+							}
 
 						</div>
 						<!-- End post comments -->
@@ -1029,4 +937,8 @@
 	<!-- End scroll container -->
 
 
+	
+
+
 </main>
+

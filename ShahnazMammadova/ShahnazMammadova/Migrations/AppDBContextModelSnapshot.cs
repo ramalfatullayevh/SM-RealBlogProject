@@ -215,11 +215,53 @@ namespace ShahnazMammadova.Migrations
                     b.Property<string>("VideoUrl")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ViewCount")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Blogs");
+                });
+
+            modelBuilder.Entity("ShahnazMammadova.Models.BlogComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("BlogId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ParentCommentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReviewContent")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReviewDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BlogId");
+
+                    b.HasIndex("ParentCommentId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("BlogComments");
                 });
 
             modelBuilder.Entity("ShahnazMammadova.Models.Category", b =>
@@ -254,9 +296,44 @@ namespace ShahnazMammadova.Migrations
                     b.Property<DateTime?>("UpdatedTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("ViewCount")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+                });
+
+            modelBuilder.Entity("ShahnazMammadova.Models.Contact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subject")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Contacts");
                 });
 
             modelBuilder.Entity("ShahnazMammadova.Models.Slider", b =>
@@ -364,6 +441,9 @@ namespace ShahnazMammadova.Migrations
 
                     b.Property<DateTime?>("UpdatedTime")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("ViewCount")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -513,6 +593,31 @@ namespace ShahnazMammadova.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("ShahnazMammadova.Models.BlogComment", b =>
+                {
+                    b.HasOne("ShahnazMammadova.Models.Blog", "Blog")
+                        .WithMany("BlogComments")
+                        .HasForeignKey("BlogId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ShahnazMammadova.Models.BlogComment", "ParentComment")
+                        .WithMany("Replies")
+                        .HasForeignKey("ParentCommentId");
+
+                    b.HasOne("ShahnazMammadova.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Blog");
+
+                    b.Navigation("ParentComment");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ShahnazMammadova.Models.Slider", b =>
                 {
                     b.HasOne("ShahnazMammadova.Models.Category", "Category")
@@ -533,6 +638,16 @@ namespace ShahnazMammadova.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("ShahnazMammadova.Models.Blog", b =>
+                {
+                    b.Navigation("BlogComments");
+                });
+
+            modelBuilder.Entity("ShahnazMammadova.Models.BlogComment", b =>
+                {
+                    b.Navigation("Replies");
                 });
 
             modelBuilder.Entity("ShahnazMammadova.Models.Category", b =>

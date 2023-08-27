@@ -47,7 +47,6 @@ app.MapControllerRoute(
 	pattern: "{area:exists}/{controller=dashboard}/{action=index}/{id?}"
 	);
 
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=home}/{action=index}/{id?}");
