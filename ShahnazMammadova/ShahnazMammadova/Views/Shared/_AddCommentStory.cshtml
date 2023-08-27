@@ -1,0 +1,16 @@
+﻿@model StoryCommentVM
+
+<form id="tt-post-comment-form" class="tt-form-minimal anim-fadeinup" method="post" asp-controller="storydetail" asp-action="addcomment">
+	<h4 class="tt-post-comment-form-heading">Leave a Comment:</h4>
+	<div class="tt-form-group">
+		<label>Comment <span class="required">*</span></label>
+		<textarea asp-for="ReviewContent" class="tt-form-control" id="30945381" rows="6" placeholder=""></textarea>
+		<input type="hidden" asp-for="StoryId" value="@ViewData["storyid"]" />
+	</div>
+
+	<small class="tt-form-text">Fields marked with an asterisk (*) are required!</small>
+
+	<div class="tt-btn tt-btn-light-outline margin-top-40">
+		<button type="submit" data-hover="Post Comment">Post Comment</button>
+	</div>
+</form>

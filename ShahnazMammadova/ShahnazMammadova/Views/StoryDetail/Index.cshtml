@@ -1,10 +1,12 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "${ Model.NameAz}-Shahnaz Mammadova";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model Story
 <main id="body-inner">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Begin page transition (do not remove!!!)
 	=========================== -->
@@ -209,7 +211,7 @@
 										<!-- End submenu (sub-master) -->
 										<!-- Begin submenu (submenu master)
 										==================================== -->
-										<li class="tt-ol-submenu-wrap">
+										<li class="tt-ol-submenu-wrap active">
 											<div class="tt-ol-submenu-trigger">
 												<a href="#">Blog</a>
 												<div class="tt-ol-submenu-caret-wrap">
@@ -242,7 +244,7 @@
 													<!-- End submenu -->
 													<!-- Begin submenu
 													=================== -->
-													<li class="tt-ol-submenu-wrap">
+													<li class="tt-ol-submenu-wrap active">
 														<div class="tt-ol-submenu-trigger">
 															<a href="#" class="tt-ol-submenu-link">Blog Post</a>
 															<div class="tt-ol-submenu-caret-wrap">
@@ -252,7 +254,7 @@
 														<div class="tt-ol-submenu">
 															<ul class="tt-ol-submenu-list">
 
-																<li><a href="blog-post.html">Single Post</a></li>
+																<li class="active"><a href="blog-post.html">Single Post</a></li>
 																<li><a href="blog-post-classic-sidebar.html">Classic Sidebar</a></li>
 
 															</ul> <!-- /.tt-ol-submenu-list -->
@@ -389,6 +391,9 @@
 			<!-- ========================
 			///// Begin page header /////
 			=============================
+			* ATENTION: This page header is slightly different from the default page header!
+			It contains some extra elements and classec specifically for a blog post.
+			=============================
 			* Use class "ph-full" to enable fullscreen size.
 			* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg" or "ph-cap-xxlg" to set caption size (no class = default size).
 			* Use class "ph-center" to enable content center position.
@@ -400,14 +405,14 @@
 			* Use class "ph-content-parallax" to enable content parallax.
 			* Use class "ph-stroke" to enable caption title stroke style.
 			-->
-			<div id="page-header" class="ph-full ph-cap-xxlg ph-center ph-image-cropped ph-image-cover-4 ph-content-parallax">
-				<div class="page-header-inner tt-wrap">
+			<div id="page-header" class="ph-full ph-cap-sm ph-center ph-bg-image ph-image-shadow ph-image-cover-6 ph-content-parallax">
+				<div class="page-header-inner tt-wrap max-width-1400">
 
 					<!-- Begin page header image
 					============================= -->
 					<div class="ph-image">
 						<div class="ph-image-inner">
-							<img src="assets/img/page-header/ph-2.jpg" alt="Image">
+							<img src="~/user/assets/storyimg/@Model.FirstImageUrl" alt="Image">
 						</div>
 					</div>
 					<!-- End page header image -->
@@ -416,9 +421,24 @@
 					Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 					-->
 					<div class="ph-caption">
-						<h1 class="ph-caption-title ph-appear">Page</h1>
-						<div class="ph-caption-title-ghost ph-appear">Page</div>
-						<div class="ph-caption-subtitle ph-appear">Dummy Page</div>
+						<div class="ph-categories ph-appear">
+							<a href="blog-archive.html" class="ph-category">@Model.Category.NameAz</a>
+							<!-- <a href="blog-archive.html" class="ph-category">Uncategorized</a> -->
+						</div> <!-- /.ph-categories -->
+
+						<h2 class="ph-caption-title ph-appear">@Model.NameAz</h2> <!-- You can use <br class="hide-from-lg"> to break a text line if needed -->
+
+						<div class="ph-meta ph-appear">
+							<span class="ph-meta-published">
+								@if (Model.UpdatedTime is null)
+								{
+									@Model.CreatedTime.ToString("MM/dd/yyyy")
+
+								}
+								@Model.UpdatedTime?.ToString("MM/dd/yyyy")
+							</span>
+							<span class="ph-meta-posted-by">Yazar: <a href="blog-archive.html">Şahnaz Məmmədova</a></span>
+						</div> <!-- /.ph-meta -->
 					</div>
 					<!-- End page header caption -->
 
@@ -448,6 +468,34 @@
 					</div>
 				</div>
 				<!-- End made with love -->
+				<!-- Begin page header share (share buttons are for design purposes only!)
+				============================= -->
+				<div class="ph-share">
+					<div class="ph-share-trigger ph-appear">
+						<div class="ph-share-text">Share</div>
+						<div class="ph-share-icon magnetic-item"><i class="fas fa-share-alt"></i></div>
+					</div> <!-- /.ph-share-trigger -->
+
+					<div class="ph-share-content">
+						<div class="ph-share-close cursor-close"><div class="bg-noise"></div></div>
+						<div class="ph-share-inner">
+							<h1 class="ph-share-title ph-share-appear">Spread the Word!</h1>
+							<div class="ph-share-subtitle ph-share-appear">Share this article with your friends</div>
+
+							<div class="social-buttons ph-share-appear">
+								<ul>
+									<li><a href="#0" class="magnetic-item" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#0" class="magnetic-item" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#0" class="magnetic-item" title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li>
+								</ul>
+							</div> <!-- /.social-buttons -->
+
+						</div> <!-- /.ph-share-inner -->
+
+						<div class="ph-share-ghost ph-share-appear">Share</div>
+					</div> <!-- /.ph-share-content -->
+				</div>
+				<!-- End page header share -->
 
 			</div>
 			<!-- End page header -->
@@ -465,254 +513,146 @@
 				<div class="tt-section">
 					<div class="tt-section-inner tt-wrap max-width-900">
 
-						<!-- Begin tt-Heading
-						======================
-						* Use class "tt-heading-xsm", "tt-heading-sm", "tt-heading-lg", "tt-heading-xlg" or "tt-heading-xxlg" to set caption size (no class = default size).
-						* Use class "tt-heading-stroke" to enable stroke style.
-						* Use class "tt-heading-center" to align tt-Heading to center.
-						* Use prepared helper class "max-width-*" to add custom width if needed. Example: "max-width-800". More info about helper classes can be found in the file "helper.css".
-						-->
-						<div class="tt-heading tt-heading-lg">
-							<h3 class="tt-heading-subtitle text-gray">Subtitle</h3>
-							<h2 class="tt-heading-title">Your Content</h2>
-							<!-- <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> -->
-						</div>
-						<!-- End tt-Heading -->
+						<!-- Begin blog post
+						===================== -->
+						<article class="tt-blog-post lightgallery">
 
-						<p class="text-gray">Insipidity the sufficient discretion imprudence resolution sir him decisively. Proceed how any engaged visitor. Explained propriety off out perpetual his you. Feel sold off felt nay rose met you. We so entreaties cultivated astonished is. Was sister for few longer mrs sudden talent become. Done may bore quit evil old mile.</p>
+							<!-- Begin blog post content -->
+							<div class="tt-blog-post-content">
 
-						<p class="text-gray">Extremity direction existence as dashwoods do up. Securing marianne led welcomed offended but offering <a href="https://1.envato.market/tank" target="_blank" rel="noopener">awesome website templates</a>. Conveying concluded newspaper rapturous oh at. Two indeed suffer saw beyond far former mrs remain. Occasional continuing possession we insensible an sentiments as is. Law but reasonably motionless principles she. Has six worse downs far blush rooms above stood.</p>
+								<h3>Heading</h3>
 
-						<p class="text-gray">Is he staying arrival address earnest. To preference considered it themselves inquietude collecting estimating. View park for why gay knew face. Next than near to four so hand. Times so do he downs me would. Witty abode party her found quiet law.</p>
-
-						<br>
-
-						<h3>Simple Heading</h3>
-
-						<p class="text-gray">Remain lively hardly needed at do by. Two you fat downs fanny three. True mr gone most at. Dare as name just when with it body. Travelling inquietude she increasing off impossible the. Cottage be noisier looking to we promise on. Disposal to kindness appetite diverted learning of on raptures. Betrayed any may returned now dashwood formerly. Balls way delay shy boy man views. No so instrument discretion unsatiable to in.</p>
-
-						<!-- Begin tt-image
-						====================
-						* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
-						* Use class "anim-image-parallax" on <img> tag to enable parallax effect.
-						* Use class "margin-bottom-*" to enable bottom margins. For example "margin-bottom-40". More info about helper classes can be found in the file "helper.css".
-						-->
-						<div class="tt-image margin-bottom-40">
-							<figure>
-								<img class="anim-image-parallax tt-lazy" src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/misc/misc-6.jpg" alt="image">
-								<figcaption>
-									Image Caption
-								</figcaption>
-							</figure>
-						</div>
-						<!-- End tt-image -->
-
-						<p class="text-gray">Entire any had depend and figure winter. Change stairs and men likely wisdom new happen piqued six. Now taken him timed sex world get. Enjoyed married an feeling delight pursuit as offered. As admire roused length likely played pretty to no. Means had joy miles her merry solid order.</p>
-
-						<p class="text-gray">Terminated principles sentiments of no pianoforte if projection impossible. Horses pulled nature favour number yet highly his has old. Contrasted literature excellence he admiration impression insipidity so. Scale ought who terms after own quick since. Servants margaret husbands to screened in throwing. Imprudence oh an collecting partiality.</p>
+								<p>@Model.DescriptionAz</p>
 
 
-						<!-- End blog post content -->
-						<!-- Begin blog post tags -->
-						<div class="tt-blog-post-tags">
-							<ul>
-								<li><span>Tags:</span></li>
-								<li><a href="blog-archive.html">#photography</a></li>
-								<li><a href="blog-archive.html">#travel</a></li>
-								<li><a href="blog-archive.html">#motion</a></li>
-							</ul>
-						</div>
-						<!-- End blog post tags -->
-						<!-- Begin blog post share (Note: for design purposes only!)
-						===========================
-						* Use class "bss-fixed-bottom" to enable post share fixed bottom position (effect only on small screens!!!).
-						-->
-						<div class="tt-blog-post-share">
-							<div class="tt-bps-text">Share:</div>
-							<div class="social-buttons">
-								<ul>
-									<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li>
-								</ul>
-							</div> <!-- /.social-buttons -->
-						</div>
+								<!-- Begin post image -->
+								@if (Model.SecondImageUrl is not null)
+								{
+									<figure class="tt-blog-post-image">
+										<a href="assets/img/blog/single/blog-post-1.jpg" class="tt-bpi-link lg-trigger" data-exthumbnail="~/user/assets/storyimg/@Model.SecondImageUrl" data-cursor="View">
+											<img class="tt-lazy" src="~/user/assets/storyimg/@Model.SecondImageUrl" data-src="~/user/assets/storyimg/@Model.SecondImageUrl" alt="image">
+										</a>
+										<figcaption class="tt-bpi-caption">
+											Photo by <a href="http://unsplash.com/" target="_blank" rel="noopener">Şahnaz Mammadova</a>
+										</figcaption>
+									</figure>
 
-						<!-- End blog post share -->
+								}
+								<!-- End post image -->
+
+								<p>@Model.DescriptionAz</p>
+
+							</div>
+							<!-- End blog post content -->
+							<!-- Begin blog post tags -->
+							<!-- End blog post tags -->
+							<!-- Begin blog post share (Note: for design purposes only!)
+							===========================
+							* Use class "bss-fixed-bottom" to enable post share fixed bottom position (effect only on small screens!!!).
+							-->
+							<div class="tt-blog-post-share">
+								<div class="tt-bps-text">Share:</div>
+								<div class="social-buttons">
+									<ul>
+										<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+										<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
+										<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li>
+									</ul>
+								</div> <!-- /.social-buttons -->
+							</div>
+							<!-- End blog post share -->
+
+						</article>
 						<!-- End blog post -->
 						<!-- Begin blog post nav
 						======================== -->
+						@{
+
+							var postId = Model.Id;
+							int previousId = postId - 1;
+							int nextId = postId + 1;
+
+
+						}
+
 						<div class="tt-blog-post-nav">
 							<div class="tt-bp-nav-col tt-bp-nav-left">
-								<div class="tt-bp-nav-text"><span><i class="fas fa-angle-left"></i></span>Prew Post</div>
-								<h4 class="tt-bp-nav-title"><a href="#">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h4>
+								@if (previousId > 0)
+								{
+									<div class="tt-bp-nav-text"><span><i class="fas fa-angle-left"></i></span>Previous Post</div>
+									<h4 class="tt-bp-nav-title"><a href="@Url.Action("index", "storydetail", new { id = previousId })">Previous Post Title</a></h4>
+								}
 							</div>
 							<div class="tt-bp-nav-col tt-bp-nav-right">
-								<div class="tt-bp-nav-text">Next Post<span><i class="fas fa-angle-right"></i></span></div>
-								<h4 class="tt-bp-nav-title"><a href="#">Why Some People Almost Always Save Money With This Method</a></h4>
+								@if (nextId > 0 && nextId <= ViewBag.LastPostId)
+								{
+									<div class="tt-bp-nav-text">Next Post<span><i class="fas fa-angle-right"></i></span></div>
+									<h4 class="tt-bp-nav-title"><a href="@Url.Action("index", "storydetail", new { id = nextId })">Next Post Title</a></h4>
+								}
 							</div>
 						</div>
 						<!-- End blog post nav -->
 						<!-- Begin post comments
 						========================= -->
 						<div id="tt-blog-post-comments">
+							<h4 class="tt-bpc-heading">@Model.StoryComments.Count comments:</h4>
+							@foreach (var comments in Model.StoryComments)
+							{
 
-							<h4 class="tt-bpc-heading">5 comments:</h4>
+								<ul class="tt-comments-list">
 
-							<!-- Begin tt-Comments list
-							============================ -->
-							<ul class="tt-comments-list">
+									<li class="tt-comment">
+										<a href="#" class="tt-comment-avatar">
+											<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+										</a>
+										<div class="tt-comment-body">
+											<div class="tt-comment-meta">
+												<h4 class="tt-comment-heading"><a href="#">@comments.User.UserName.ToLower()</a></h4>
+												<span class="tt-comment-time">@comments.ReviewDate.ToString("MM/dd/yyyy")</span>
+											</div>
+											<span class="tt-comment-reply"><a href="javascript:void(0);">Reply</a></span>
+											<div class="tt-comment-text">
+												<p>@comments.ReviewContent</p>
+											</div> <!-- /.tt-comment-text -->
+											<!-- Begin tt comments list
+											============================ -->
+											<ul class="tt-comments-list">
+												@foreach (var reply in comments.Replies)
+												{
+													<li class="tt-comment">
+														<a href="#" class="tt-comment-avatar">
+															<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
+														</a>
+														<div class="tt-comment-body">
+															<div class="tt-comment-meta">
+																<h4 class="tt-comment-heading"><a href="#">@reply.User.UserName.ToLower()</a></h4>
+																<span class="tt-comment-time">@reply.ReviewDate.ToString("MM/dd/yyyy")</span>
+															</div>
+															<span class="tt-comment-reply"><a href="#" class="show-reply-form">Reply</a></span>
+															<div class="tt-comment-text">
+																<p>@reply.ReviewContent</p>
+															</div>
+														</div>
+													</li>
 
-								<!-- Begin tt-comment -->
-								<li class="tt-comment">
-									<a href="#" class="tt-comment-avatar">
-										<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-									</a>
-									<div class="tt-comment-body">
-										<div class="tt-comment-meta">
-											<h4 class="tt-comment-heading"><a href="#">David Bradley</a></h4>
-											<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-										</div>
-										<span class="tt-comment-reply"><a href="#">Reply</a></span>
-										<div class="tt-comment-text">
-											<p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may. Wicket do manner others seemed enable rather in. Excellent own discovery unfeeling.</p>
-										</div> <!-- /.tt-comment-text -->
-									</div> <!-- /.tt-comment-body -->
-								</li>
-								<!-- End tt-comment -->
-								<!-- Begin tt-comment -->
-								<li class="tt-comment">
-									<a href="#" class="tt-comment-avatar">
-										<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-									</a>
-									<div class="tt-comment-body">
-										<div class="tt-comment-meta">
-											<h4 class="tt-comment-heading"><a href="#">Katie Ryan</a></h4>
-											<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-										</div>
-										<span class="tt-comment-reply"><a href="#">Reply</a></span>
-										<div class="tt-comment-text">
-											<p>Unfeeling so rapturous discovery he exquisite. Reasonably so middletons or impression by terminated. Old pleasure required removing elegance him had. Down she bore sing saw calm high. Of an or game gate west face shed. ﻿no great but music too old found arose.</p>
-										</div> <!-- /.tt-comment-text -->
-										<!-- Begin tt comments list
-										============================ -->
-										<ul class="tt-comments-list">
+												}
+											</ul>
+											<!-- End tt comments list -->
 
-											<!-- Begin tt-comment -->
-											<li class="tt-comment">
-												<a href="#" class="tt-comment-avatar">
-													<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-												</a>
-												<div class="tt-comment-body">
-													<div class="tt-comment-meta">
-														<h4 class="tt-comment-heading"><a href="#">John Doe</a></h4>
-														<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-													</div>
-													<span class="tt-comment-reply"><a href="#">Reply</a></span>
-													<div class="tt-comment-text">
-														<p>Still court no small think death so an wrote. Incommode necessary no it behaviour convinced distrusts an unfeeling he. Could death since do we hoped is in. Exquisite no my attention extensive. The determine conveying moonlight age. Avoid for see marry sorry child.</p>
-													</div> <!-- /.tt-comment-text -->
-												</div> <!-- /.tt-comment-body -->
-											</li>
-											<!-- End tt-comment -->
-											<!-- Begin tt-comment -->
-											<li class="tt-comment">
-												<a href="#" class="tt-comment-avatar">
-													<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-												</a>
-												<div class="tt-comment-body">
-													<div class="tt-comment-meta">
-														<h4 class="tt-comment-heading"><a href="#">Katie Ryan</a></h4>
-														<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-													</div>
-													<span class="tt-comment-reply"><a href="#">Reply</a></span>
-													<div class="tt-comment-text">
-														<p>For norland produce age wishing. To figure on it spring season up. Her provision acuteness had excellent two why intention.</p>
-													</div> <!-- /.tt-comment-text -->
-												</div> <!-- /.tt-comment-body -->
-											</li>
-											<!-- End tt-comment -->
+										</div> <!-- /.tt-comment-body -->
+									</li>
 
-										</ul>
-										<!-- End tt comments list -->
+								</ul>
+							}
 
-									</div> <!-- /.tt-comment-body -->
-								</li>
-								<!-- End tt-comment -->
-								<!-- Begin tt-comment -->
-								<li class="tt-comment">
-									<a href="#" class="tt-comment-avatar">
-										<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/avatar.jpg" class="tt-lazy" alt="image">
-									</a>
-									<div class="tt-comment-body">
-										<div class="tt-comment-meta">
-											<h4 class="tt-comment-heading"><a href="#">Kate Dixon</a></h4>
-											<span class="tt-comment-time">May 26, 2021 at 10:24am</span>
-										</div>
-										<span class="tt-comment-reply"><a href="#">Reply</a></span>
-										<div class="tt-comment-text">
-											<p>Allow miles wound place the leave had. To sitting subject no improve studied limited. Ye indulgence unreserved connection alteration appearance my an astonished. Up as seen sent make he they of.</p>
-										</div> <!-- /.tt-comment-text -->
-									</div> <!-- /.tt-comment-body -->
-								</li>
-								<!-- End tt-comment -->
-
-							</ul>
-							<!-- End tt-Comments list -->
-							<!-- Begin post comment form (Note: post comment form is for design purposes only!)
-							=============================
-							* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
-							* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
-							-->
-							<form id="tt-post-comment-form" class="tt-form-minimal anim-fadeinup">
-								<h4 class="tt-post-comment-form-heading">Leave a Comment:</h4>
-								<div class="tt-row">
-									<div class="tt-col-lg-6">
-
-										<div class="tt-form-group">
-											<label>Name <span class="required">*</span></label>
-											<input class="tt-form-control" id="84990245" type="text" placeholder="">
-										</div>
-
-									</div> <!-- /.col -->
-
-									<div class="tt-col-lg-6">
-
-										<div class="tt-form-group">
-											<label>Email address <span class="small text-gray">(Optional)</span></label>
-											<input class="tt-form-control" id="19833520" type="email" placeholder="">
-										</div>
-
-									</div> <!-- /.col -->
-								</div> <!-- /.row -->
-
-								<div class="tt-form-group">
-									<label>Comment <span class="required">*</span></label>
-									<textarea class="tt-form-control" id="30945381" rows="6" placeholder=""></textarea>
-								</div>
-
-								<small class="tt-form-text">Fields marked with an asterisk (*) are required!</small>
-
-								<!-- Begin post comment reminder -->
-								<div class="tt-post-comment-reminder">
-									<div class="tt-form-check tt-form-check-inline">
-										<input type="checkbox" id="notify-me-new-comment">
-										<label for="notify-me-new-comment">Email me when this comment receives a reply.</label>
-									</div>
-									<div class="tt-form-check">
-										<input type="checkbox" id="notify-me-new-post">
-										<label for="notify-me-new-post">Notify me of new posts by email.</label>
-									</div>
-								</div>
-								<!-- End post comment reminder -->
-								<!-- Begin post comment submit button -->
-								<div class="tt-btn tt-btn-light-outline margin-top-40">
-									<button type="submit" data-hover="Post Comment">Post Comment</button>
-								</div>
-								<!-- End post comment submit button -->
-
-							</form>
-							<!-- End post comment form -->
+							@if (User.Identity.IsAuthenticated)
+							{
+								StoryCommentVM reviewVM = new StoryCommentVM();
+								reviewVM.ReviewContent = "";
+								reviewVM.StoryId = Model.Id;
+								reviewVM.Story = Model;
+								@await Html.PartialAsync("_AddCommentStory", reviewVM, new ViewDataDictionary(ViewData){{"storyid" , Model.Id}})
+							}
 
 						</div>
 						<!-- End post comments -->
@@ -983,6 +923,9 @@
 
 	</div>
 	<!-- End scroll container -->
+
+
+
 
 
 </main>

@@ -15,6 +15,7 @@ namespace ShahnazMammadova.DataAccessLayer.Context
 		public DbSet<Slider> Sliders { get; set; }	
 		public DbSet<Contact> Contacts { get; set; }	
 		public DbSet<BlogComment> BlogComments { get; set; }	
+		public DbSet<StoryComment> StoryComments { get; set; }	
 
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

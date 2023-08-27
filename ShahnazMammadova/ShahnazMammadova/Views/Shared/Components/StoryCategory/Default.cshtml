@@ -1,0 +1,10 @@
+﻿@model ICollection<Category>
+<div class="sidebar-widget sidebar-categories">
+    <h3 class="sidebar-heading">Categories</h3>
+    <ul class="list-unstyled">
+        @foreach (var category in Model)
+        {
+            <li><a href="blog-archive.html">@category.NameAz<span title="Entries in this category">@category.Stories.Count(b=>b.IsDeleted == false)</span></a></li>
+        }
+    </ul>
+</div>	

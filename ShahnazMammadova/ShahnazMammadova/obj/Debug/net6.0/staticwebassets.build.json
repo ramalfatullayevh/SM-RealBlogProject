@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "D/wHNAgiQ2AYNAcCPa9lGZVqWFn4QGlKV+itjm0pnoc=",
+  "Hash": "BMc/9+Z8p1oqe/2qoCnYlOR9eUq0dNuQzoGlSexlKHw=",
   "Source": "ShahnazMammadova",
   "BasePath": "_content/ShahnazMammadova",
   "Mode": "Default",
@@ -47838,6 +47838,40 @@
       "OriginalItemSpec": "wwwroot\\user\\assets\\storyimg\\1fae88b6-39e2-48c4-a5b5-5214a18f389fWhatsApp Image 2023-08-12 at 09.jpeg"
     },
     {
+      "Identity": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\user\\assets\\storyimg\\4a061a58-fe53-4e35-a40f-1563f61b3bf4Losemius (6).png",
+      "SourceId": "ShahnazMammadova",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\",
+      "BasePath": "_content/ShahnazMammadova",
+      "RelativePath": "user/assets/storyimg/4a061a58-fe53-4e35-a40f-1563f61b3bf4Losemius (6).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\assets\\storyimg\\4a061a58-fe53-4e35-a40f-1563f61b3bf4Losemius (6).png"
+    },
+    {
+      "Identity": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\user\\assets\\storyimg\\66c1195b-d26f-46e1-a862-45479d056afaLosemius (2).png",
+      "SourceId": "ShahnazMammadova",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\",
+      "BasePath": "_content/ShahnazMammadova",
+      "RelativePath": "user/assets/storyimg/66c1195b-d26f-46e1-a862-45479d056afaLosemius (2).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\assets\\storyimg\\66c1195b-d26f-46e1-a862-45479d056afaLosemius (2).png"
+    },
+    {
       "Identity": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\user\\assets\\storyimg\\66e292ed-9e83-48dc-9c7b-d18db8c039c9Losemius (9).png",
       "SourceId": "ShahnazMammadova",
       "SourceType": "Discovered",
@@ -47887,6 +47921,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user\\assets\\storyimg\\9ad3ec87-7e44-41e7-b8dc-ea4a5369e200WhatsApp Image 2023-07-13 at 22.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\user\\assets\\storyimg\\cda886f3-8359-4b86-ac07-0c084674bbcbLosemius (9).png",
+      "SourceId": "ShahnazMammadova",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\",
+      "BasePath": "_content/ShahnazMammadova",
+      "RelativePath": "user/assets/storyimg/cda886f3-8359-4b86-ac07-0c084674bbcbLosemius (9).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\assets\\storyimg\\cda886f3-8359-4b86-ac07-0c084674bbcbLosemius (9).png"
+    },
+    {
+      "Identity": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\user\\assets\\storyimg\\d6bf314f-adf7-43d8-86e4-18c175feaf71Losemius (3).png",
+      "SourceId": "ShahnazMammadova",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ramal\\Desktop\\SM-RealBlogProject\\ShahnazMammadova\\ShahnazMammadova\\wwwroot\\",
+      "BasePath": "_content/ShahnazMammadova",
+      "RelativePath": "user/assets/storyimg/d6bf314f-adf7-43d8-86e4-18c175feaf71Losemius (3).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user\\assets\\storyimg\\d6bf314f-adf7-43d8-86e4-18c175feaf71Losemius (3).png"
     }
   ]
 }

@@ -1,9 +1,11 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Hekayələr - Shahnaz Mammadova";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+
+@model PaginationVM<Story>
 <main id="body-inner">
 
 	<!-- Begin page transition (do not remove!!!)
@@ -416,9 +418,9 @@
 					Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
 					-->
 					<div class="ph-caption">
-						<h1 class="ph-caption-title ph-appear">Blog</h1>
-						<div class="ph-caption-title-ghost ph-appear">Blog</div>
-						<div class="ph-caption-subtitle ph-appear">Articles &amp; News</div>
+						<h1 class="ph-caption-title ph-appear">Hekayələr</h1>
+						<div class="ph-caption-title-ghost ph-appear">Hekayələr</div>
+						<div class="ph-caption-subtitle ph-appear">Bütün Hekayələr</div>
 					</div>
 					<!-- End page header caption -->
 
@@ -462,7 +464,7 @@
 				============================
 				* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 				-->
-				<div class="tt-section">
+				<div class="tt-section" style="margin-left:20px">
 					<div class="tt-section-inner tt-wrap">
 
 						<!-- Use class "tt-lg-row-reverse" to align sidebar to the left -->
@@ -477,178 +479,48 @@
 								* Use class "bli-compact" to enable compact blog list style. Note: If "tt-sidebar" is used, then add more width to "tt-section-inner", for example "max-width-1600".
 								-->
 								<div id="blog-list" class="bli-image-cropped">
+									@foreach (var blogs in Model.Items)
+									{
+										<article class="blog-list-item">
 
-									<!-- Begin blog list item
-									========================== -->
-									<article class="blog-list-item">
+											<!-- Begin blog list item image -->
+											<a asp-controller="storydetail" asp-action="index" asp-route-id="@blogs.Id" class="bli-image-wrap" data-cursor="Ətraflı Oxu">
+												<figure class="bli-image">
+													<img src="~/user/assets/storyimg/@blogs.FirstImageUrl" data-src="~/user/assets/storyimg/@blogs.FirstImageUrl" class="tt-lazy anim-zoomin" alt="Image">
+												</figure>
+											</a>
+											<!-- End blog list item image -->
+											<!-- Begin blog list item info -->
+											<div class="bli-info">
+												<div class="bli-categories">
+													<a asp-controller="storydetail" asp-action="index" asp-route-id="@blogs.Id">@blogs.Category.NameAz</a>
+													<!-- <a href="blog-archive.html">Uncategorized</a> -->
+												</div>
+												<h2 class="bli-title"><a asp-controller="storydetail" asp-action="index" asp-route-id="@blogs.Id">@blogs.NameAz</a></h2>
+												<div class="bli-meta">
+													<span class="published">
+														@if (blogs.UpdatedTime is null)
+														{
+															@blogs.CreatedTime.ToString("MM/dd/yyyy")
 
-										<!-- Begin blog list item image -->
-										<a href="blog-post-classic-sidebar.html" class="bli-image-wrap" data-cursor="Read<br>More">
-											<figure class="bli-image">
-												<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/list/blog-list-1.jpg" class="tt-lazy anim-zoomin" alt="Image">
-											</figure>
-										</a>
-										<!-- End blog list item image -->
-										<!-- Begin blog list item info -->
-										<div class="bli-info">
-											<div class="bli-categories">
-												<a href="blog-archive.html">Lifestyle</a>
-												<!-- <a href="blog-archive.html">Uncategorized</a> -->
-											</div>
-											<h2 class="bli-title"><a href="blog-post-classic-sidebar.html">5 Surprising Techniques to Improve Your Creativity</a></h2>
-											<div class="bli-meta">
-												<span class="published">May 26, 2021</span>
-												<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-											</div>
-											<div class="bli-desc">
-												<!-- 3 lines is optimal! -->
-												For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do. Particular way thoroughly unaffected projection favourable mrs can projecting own. Thirty it matter enable become admire...
-											</div>
-											<div class="bli-read-more tt-btn tt-btn-link">
-												<a href="blog-post-classic-sidebar.html" data-hover="Read More">Read More</a>
-											</div>
-										</div>
-										<!-- End blog list item info -->
+														}
+														@blogs.UpdatedTime?.ToString("MM/dd/yyyy")
+													</span>
 
-									</article>
-									<!-- End blog list item -->
-									<!-- Begin blog list item
-									========================== -->
-									<article class="blog-list-item">
+													<span class="posted-by">- Yazar:  <a href="blog-archive.html">Şahnaz Məmmədova</a></span>
+												</div>
+												<div class="bli-desc">
+													<!-- 3 lines is optimal! -->
+													@blogs.DescriptionAz
+												</div>
+												<div class="bli-read-more tt-btn tt-btn-link">
+													<a asp-controller="storydetail" asp-action="index" asp-route-id="@blogs.Id" data-hover="Ətraflı Oxu">Ətraflı Oxu</a>
+												</div>
+											</div>
+											<!-- End blog list item info -->
 
-										<!-- Begin blog list item image -->
-										<a href="blog-post-classic-sidebar.html" class="bli-image-wrap" data-cursor="Read<br>More">
-											<figure class="bli-image">
-												<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/list/blog-list-2.jpg" class="tt-lazy anim-zoomin" alt="Image">
-											</figure>
-										</a>
-										<!-- End blog list item image -->
-										<!-- Begin blog list item info -->
-										<div class="bli-info">
-											<div class="bli-categories">
-												<a href="blog-archive.html">Tutorials</a>
-												<!-- <a href="blog-archive.html">Uncategorized</a> -->
-											</div>
-											<h2 class="bli-title"><a href="blog-post-classic-sidebar.html">Avoid the Top 10 Mistakes Made by Beginners</a></h2>
-											<div class="bli-meta">
-												<span class="published">May 24, 2021</span>
-												<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-											</div>
-											<div class="bli-desc">
-												<!-- 3 lines is optimal! -->
-												Extremely we promotion remainder eagerness enjoyment an. Ham her demands removal brought minuter raising invited gay. Contented consisted continual curiosity contained get sex. Forth child dried in in aware do pursuit regular...
-											</div>
-											<div class="bli-read-more tt-btn tt-btn-link">
-												<a href="blog-post-classic-sidebar.html" data-hover="Read More">Read More</a>
-											</div>
-										</div>
-										<!-- End blog list item info -->
-
-									</article>
-									<!-- End blog list item -->
-									<!-- Begin blog list item
-									========================== -->
-									<article class="blog-list-item">
-
-										<!-- Begin blog list item image -->
-										<a href="blog-post-classic-sidebar.html" class="bli-image-wrap" data-cursor="Read<br>More">
-											<figure class="bli-image">
-												<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/list/blog-list-3.jpg" class="tt-lazy anim-zoomin" alt="Image">
-											</figure>
-										</a>
-										<!-- End blog list item image -->
-										<!-- Begin blog list item info -->
-										<div class="bli-info">
-											<div class="bli-categories">
-												<a href="blog-archive.html">Lifestyle</a>
-												<!-- <a href="blog-archive.html">Uncategorized</a> -->
-											</div>
-											<h2 class="bli-title"><a href="blog-post-classic-sidebar.html">Why Some People Almost Always Save Money With This Method</a></h2>
-											<div class="bli-meta">
-												<span class="published">May 23, 2021</span>
-												<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-											</div>
-											<div class="bli-desc">
-												<!-- 3 lines is optimal! -->
-												Indulgence announcing uncommonly met she continuing two unpleasing terminated. Now busy say down the shed eyes roof paid her. Of shameless collected suspicion existence in. Share walls stuff think but the arise guest course to advice...
-											</div>
-											<div class="bli-read-more tt-btn tt-btn-link">
-												<a href="blog-post-classic-sidebar.html" data-hover="Read More">Read More</a>
-											</div>
-										</div>
-										<!-- End blog list item info -->
-
-									</article>
-									<!-- End blog list item -->
-									<!-- Begin blog list item
-									========================== -->
-									<article class="blog-list-item">
-
-										<!-- Begin blog list item image -->
-										<a href="blog-post-classic-sidebar.html" class="bli-image-wrap" data-cursor="Read<br>More">
-											<figure class="bli-image">
-												<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/list/blog-list-4.jpg" class="tt-lazy anim-zoomin" alt="Image">
-											</figure>
-										</a>
-										<!-- End blog list item image -->
-										<!-- Begin blog list item info -->
-										<div class="bli-info">
-											<div class="bli-categories">
-												<a href="blog-archive.html">Inspiration</a>
-												<!-- <a href="blog-archive.html">Uncategorized</a> -->
-											</div>
-											<h2 class="bli-title"><a href="blog-post-classic-sidebar.html">Want to Step Up Your Skills? You Need to Read This First</a></h2>
-											<div class="bli-meta">
-												<span class="published">May 21, 2021</span>
-												<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-											</div>
-											<div class="bli-desc">
-												<!-- 3 lines is optimal! -->
-												Raising say express had chiefly detract demands she. Quiet led own cause three him. Front no party young abode state up. Saved he do fruit woody of to. Met defective are allowance two perceived listening consulted contained...
-											</div>
-											<div class="bli-read-more tt-btn tt-btn-link">
-												<a href="blog-post-classic-sidebar.html" data-hover="Read More">Read More</a>
-											</div>
-										</div>
-										<!-- End blog list item info -->
-
-									</article>
-									<!-- End blog list item -->
-									<!-- Begin blog list item
-									========================== -->
-									<article class="blog-list-item">
-
-										<!-- Begin blog list item image -->
-										<a href="blog-post-classic-sidebar.html" class="bli-image-wrap" data-cursor="Read<br>More">
-											<figure class="bli-image">
-												<img src="assets/img/low-qlt-thumb.jpg" data-src="assets/img/blog/list/blog-list-5.jpg" class="tt-lazy anim-zoomin" alt="Image">
-											</figure>
-										</a>
-										<!-- End blog list item image -->
-										<!-- Begin blog list item info -->
-										<div class="bli-info">
-											<div class="bli-categories">
-												<a href="blog-archive.html">Tutorials</a>
-												<!-- <a href="blog-archive.html">Uncategorized</a> -->
-											</div>
-											<h2 class="bli-title"><a href="blog-post-classic-sidebar.html">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h2>
-											<div class="bli-meta">
-												<span class="published">May 19, 2021</span>
-												<span class="posted-by">- by <a href="blog-archive.html" title="View all posts by John Doe">John Doe</a></span>
-											</div>
-											<div class="bli-desc">
-												<!-- 3 lines is optimal! -->
-												On projection apartments unsatiable so if he entreaties appearance. Rose you wife how set lady half wish. Hard sing an in true felt. Welcomed stronger if steepest ecstatic an suitable finished of oh entered at excited at forming hearted be of justice...
-											</div>
-											<div class="bli-read-more tt-btn tt-btn-link">
-												<a href="blog-post-classic-sidebar.html" data-hover="Read More">Read More</a>
-											</div>
-										</div>
-										<!-- End blog list item info -->
-
-									</article>
-									<!-- End blog list item -->
-
+										</article>
+									}
 								</div>
 								<!-- End blog list -->
 
@@ -671,9 +543,9 @@
 										* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
 										* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
 										-->
-										<form>
+										<form method="get" asp-controller="stories" asp-action="index">
 											<div class="tt-form-btn-inside">
-												<input class="tt-form-control" type="text" id="search" placeholder="Type something & hit enter" required>
+												<input name="query" class="tt-form-control" type="text" id="search" placeholder="Type something & hit enter" required>
 												<button type="submit"><i class="fas fa-search"></i></button>
 											</div>
 										</form>
@@ -682,130 +554,34 @@
 									</div>
 									<!-- End sidebar widget -->
 									<!-- Begin sidebar widget -->
-									<div class="sidebar-widget sidebar-categories">
-										<h3 class="sidebar-heading">Categories</h3>
-										<ul class="list-unstyled">
-											<li><a href="blog-archive.html">Web Design <span title="Entries in this category">26</span></a></li>
-											<li><a href="blog-archive.html">Resources <span title="Entries in this category">12</span></a></li>
-											<li><a href="blog-archive.html">Tutorials <span title="Entries in this category">19</span></a></li>
-											<li><a href="blog-archive.html">Freebies <span title="Entries in this category">31</span></a></li>
-											<li><a href="blog-archive.html">Inspiration <span title="Entries in this category">67</span></a></li>
-										</ul>
-									</div>
+									@await Component.InvokeAsync("StoryCategory")
+
+
 									<!-- End sidebar widget -->
 									<!-- Begin sidebar widget -->
 									<div class="sidebar-widget sidebar-post-list">
 										<!-- Can be "Recent Posts" or "Popular Posts" etc. -->
-										<h3 class="sidebar-heading">Popular Posts</h3>
+										<h3 class="sidebar-heading">Popular Hekayələr</h3>
 										<ul class="list-unstyled">
-											<li>
-												<div class="sidebar-post-data">
-													<h5 class="sidebar-post-title"><a href="blog-post-classic-sidebar.html">Why Some People Almost Always Save Money With This Method</a></h5>
-													<!-- <span class="sidebar-post-author">By: <a href="">John Doe</a></span> -->
-													<span class="sidebar-post-date">May 14, 2021</span>
-												</div>
-											</li>
-											<li>
-												<div class="sidebar-post-data">
-													<h5 class="sidebar-post-title"><a href="blog-post-classic-sidebar.html">Want to Step Up Your Skills? You Need to Read This First</a></h5>
-													<!-- <span class="sidebar-post-author">By: <a href="">John Doe</a></span> -->
-													<span class="sidebar-post-date">May 12, 2021</span>
-												</div>
-											</li>
-											<li>
-												<div class="sidebar-post-data">
-													<h5 class="sidebar-post-title"><a href="blog-post-classic-sidebar.html">Secrets to Getting Your Project to Complete Quickly and Efficiently</a></h5>
-													<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
-													<span class="sidebar-post-date">May 17, 2021</span>
-												</div>
-											</li>
-											<li>
-												<div class="sidebar-post-data">
-													<h5 class="sidebar-post-title"><a href="blog-post-classic-sidebar.html">How to Win Friends and Influence People?</a></h5>
-													<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
-													<span class="sidebar-post-date">May 21, 2021</span>
-												</div>
-											</li>
+											@foreach (var popular in Model.Items.Take(5))
+											{
+												<li>
+													<div class="sidebar-post-data">
+														<h5 class="sidebar-post-title"><a asp-controller="storydetail" asp-action="index" asp-route-id="@popular.Id">@popular.NameAz</a></h5>
+														<!-- <span class="sidebar-post-author">By: <a href="">Henry Harrison</a></span> -->
+														<span class="sidebar-post-date">
+															@if (popular.UpdatedTime is null)
+															{
+																@popular.CreatedTime.ToString("MM/dd/yyyy")
+
+															}
+															@popular.UpdatedTime?.ToString("MM/dd/yyyy")
+														</span>
+													</div>
+												</li>
+											}
 										</ul>
 									</div>
-									<!-- End sidebar widget -->
-									<!-- Begin sidebar widget -->
-									<div class="sidebar-widget sidebar-comments-list">
-										<h3 class="sidebar-heading">Recent Comments</h3>
-										<ul class="list-unstyled">
-											<li class="sidebar-comment">
-												<div class="sidebar-comment-meta">
-													<div class="sidebar-comment-data">
-														<span class="sidebar-comment-author"><a href="#">John Doe</a></span>
-														<span class="sidebar-comment-date">May 14, 2021</span>
-													</div>
-												</div>
-												<div class="sidebar-comment-text">
-													<a href="#">Aliquet praesent tempor ac dolor aliquet. Risus mi vitae hendrerit orci vitae amet lacus tertis ...</a>
-												</div>
-											</li>
-
-											<li class="sidebar-comment">
-												<div class="sidebar-comment-meta">
-													<div class="sidebar-comment-data">
-														<span class="sidebar-comment-author"><a href="#">David Bradley</a></span>
-														<span class="sidebar-comment-date">May 14, 2021</span>
-													</div>
-												</div>
-												<div class="sidebar-comment-text">
-													<a href="#">Laculis molestie rhoncus. Amet maecenas ut orci id dui. Et dui morbi. Non mauris nautis trettis ...</a>
-												</div>
-											</li>
-
-											<li class="sidebar-comment">
-												<div class="sidebar-comment-meta">
-													<div class="sidebar-comment-data">
-														<span class="sidebar-comment-author"><a href="#">Kate Dixon</a></span>
-														<span class="sidebar-comment-date">May 14, 2021</span>
-													</div>
-												</div>
-												<div class="sidebar-comment-text">
-													<a href="#">Feugiat fringilla sequi. Anunc adipiscing nisl lorem morbi tincidunt gravida vistrim nocktac fitset ...</a>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<!-- End sidebar widget -->
-									<!-- Begin sidebar widget -->
-									<div class="sidebar-widget sidebar-tags">
-										<h3 class="sidebar-heading">Tags</h3>
-										<div class="sidebar-tags-list">
-											<ul>
-												<li><a href="blog-archive.html">#portfolio</a></li>
-												<li><a href="blog-archive.html">#multipurpose</a></li>
-												<li><a href="blog-archive.html">#minimal</a></li>
-												<li><a href="blog-archive.html">#agency</a></li>
-												<li><a href="blog-archive.html">#creatives</a></li>
-												<li><a href="blog-archive.html">#freelancers</a></li>
-												<li><a href="blog-archive.html">#design</a></li>
-												<li><a href="blog-archive.html">#bootstrap</a></li>
-												<li><a href="blog-archive.html">#responsive</a></li>
-												<li><a href="blog-archive.html">#simple</a></li>
-												<li><a href="blog-archive.html">#creative</a></li>
-												<li><a href="blog-archive.html">#blog</a></li>
-												<li><a href="blog-archive.html">#wordpress</a></li>
-												<li><a href="blog-archive.html">#black &amp; white</a></li>
-											</ul>
-										</div> <!-- /.sidebar-tags-list -->
-									</div>
-									<!-- End sidebar widget -->
-									<!-- Begin sidebar widget -->
-									<div class="sidebar-widget sidebar-meta">
-										<h3 class="sidebar-heading">Meta</h3>
-										<ul class="list-unstyled">
-											<li><a href="#">Log In</a></li>
-											<li><a href="#">Entries RSS</a></li>
-											<li><a href="#">Comments RSS</a></li>
-											<li><a href="https://themetorium.net/" target="_blank" rel="noopener" class="tt-link">Themetorium.net</a></li>
-										</ul>
-									</div>
-									<!-- End sidebar widget -->
-
 								</div>
 								<!-- End sidebar (classic) -->
 
@@ -818,18 +594,29 @@
 						-->
 						<div class="tt-pagination tt-pagin-center anim-fadeinup">
 							<div class="tt-pagin-prev">
-								<a href="#" class="tt-pagin-item magnetic-item"><i class="fas fa-chevron-left"></i></a>
+								@if (Model.CurrentPage > 1)
+								{
+									<a href="@Url.Action("index", new { page = Model.CurrentPage - 1, query = Model.Query })" class="tt-pagin-item magnetic-item">
+										<i class="fas fa-chevron-left"></i>
+									</a>
+								}
 							</div>
 							<div class="tt-pagin-numbers">
-								<a href="#0" class="tt-pagin-item magnetic-item active">1</a>
-								<a href="#" class="tt-pagin-item magnetic-item">2</a>
-								<a href="#" class="tt-pagin-item magnetic-item">3</a>
-								<a href="#" class="tt-pagin-item magnetic-item">4</a>
+								@for (int i = 1; i <= Model.MaxPageCount; i++)
+								{
+									<a href="@Url.Action("index", new { page = i, query = Model.Query })" class="tt-pagin-item magnetic-item @(Model.CurrentPage == i ? "active" : "")">@i</a>
+								}
 							</div>
 							<div class="tt-pagin-next">
-								<a href="#" class="tt-pagin-item tt-pagin-next magnetic-item"><i class="fas fa-chevron-right"></i></a>
+								@if (Model.CurrentPage < Model.MaxPageCount)
+								{
+									<a href="@Url.Action("index", new { page = Model.CurrentPage + 1, query = Model.Query })" class="tt-pagin-item tt-pagin-next magnetic-item">
+										<i class="fas fa-chevron-right"></i>
+									</a>
+								}
 							</div>
 						</div>
+
 						<!-- End tt-pagination -->
 
 					</div> <!-- /.tt-section-inner -->

@@ -2,13 +2,13 @@
 
 namespace ShahnazMammadova.ViewModels
 {
-	public class BlogCommentVM
+	public class StoryCommentVM
 	{
 		public string ReviewContent { get; set; }
 
-		public int BlogId { get; set; }
+		public int StoryId { get; set; }
 
-		public Blog? Blog { get; set; }
+		public Story? Story { get; set; }
 
 		//public int? ParentCommentId { get; set; }
 

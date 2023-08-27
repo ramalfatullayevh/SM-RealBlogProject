@@ -4,11 +4,11 @@ using ShahnazMammadova.DataAccessLayer.Context;
 
 namespace ShahnazMammadova.ViewComponents
 {
-	public class BlogCategoryViewComponent:ViewComponent
+	public class BlogCategoryViewComponenets:ViewComponent
 	{
 		readonly AppDBContext _context;
 
-		public BlogCategoryViewComponent(AppDBContext context)
+		public BlogCategoryViewComponenets(AppDBContext context)
 		{
 			_context = context;
 		}
