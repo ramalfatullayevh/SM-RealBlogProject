@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using ShahnazMammadova.DataAccessLayer.Context;
 using ShahnazMammadova.Models;
 using ShahnazMammadova.ViewModels;
+using System.Web;
 
 namespace ShahnazMammadova.Controllers
 {
@@ -25,7 +26,7 @@ namespace ShahnazMammadova.Controllers
 			if (story is null) return NotFound();
 			var lastPostId = await _context.Stories.Where(b => b.IsDeleted == false).OrderByDescending(p => p.Id).Select(p => p.Id).FirstOrDefaultAsync();
 			ViewBag.LastPostId = lastPostId;
-			return View(story);
+            return View(story);
 		}
 
 		[HttpPost]

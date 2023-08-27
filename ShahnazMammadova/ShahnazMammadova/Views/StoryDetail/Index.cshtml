@@ -1,6 +1,6 @@
 ﻿
 @{
-	ViewData["Title"] = "${ Model.NameAz}-Shahnaz Mammadova";
+	ViewData["Title"] = $"{Model.NameAz} - Shahnaz Mammadova";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -516,13 +516,30 @@
 						<!-- Begin blog post
 						===================== -->
 						<article class="tt-blog-post lightgallery">
+							@{
+								string fullDescription = Model.DescriptionAz;
+								int length = fullDescription.Length;
+								int splitIndex = length / 2;
 
+								// İlk yarıyı al
+								string firstPart = fullDescription.Substring(0, splitIndex);
+
+								// İlk yarıdan son kelimeyi bul
+								int lastSpaceIndex = firstPart.LastIndexOf(" ");
+								if (lastSpaceIndex != -1)
+								{
+									firstPart = firstPart.Substring(0, lastSpaceIndex);
+								}
+
+								// İkinci yarıyı al
+								string secondPart = fullDescription.Substring(firstPart.Length);
+							}
 							<!-- Begin blog post content -->
 							<div class="tt-blog-post-content">
 
 								<h3>Heading</h3>
 
-								<p>@Model.DescriptionAz</p>
+								<p>@firstPart ... </p>
 
 
 								<!-- Begin post image -->
@@ -540,7 +557,7 @@
 								}
 								<!-- End post image -->
 
-								<p>@Model.DescriptionAz</p>
+								<p>@secondPart</p>
 
 							</div>
 							<!-- End blog post content -->
@@ -550,13 +567,35 @@
 							===========================
 							* Use class "bss-fixed-bottom" to enable post share fixed bottom position (effect only on small screens!!!).
 							-->
+							@{
+								string currentUrl = Context.Request.Scheme + "://" + Context.Request.Host + Context.Request.Path;
+								string encodedUrl = System.Net.WebUtility.UrlEncode(currentUrl);
+							}
+
 							<div class="tt-blog-post-share">
-								<div class="tt-bps-text">Share:</div>
+								<div class="tt-bps-text">Share with Your Friends:</div>
 								<div class="social-buttons">
 									<ul>
-										<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a></li>
-										<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Twitter"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#0" class="magnetic-item" rel="noopener" title="Share on Pinterest"><i class="fab fa-pinterest"></i></a></li>
+										<li>
+											<a href="https://api.whatsapp.com/send?text=@Html.Raw(encodedUrl)" title="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+										</li>
+										<li>
+											<a href="https://twitter.com/intent/tweet?url=@Html.Raw(encodedUrl)" class="magnetic-item" rel="noopener" title="Share on Twitter"><i class="fab fa-twitter"></i></a>
+										</li>
+										<li>
+											<a href="https://www.facebook.com/sharer/sharer.php?u=@Html.Raw(encodedUrl)" target="_blank" rel="noopener noreferrer nofollow" title="Share on Facebook"><i class="fab fa-facebook"></i></a>
+										</li>
+										<li>
+											<a href="https://www.linkedin.com/sharing/share-offsite/?url=@encodedUrl" target="_blank" rel="noopener noreferrer nofollow" title="Share on Linkedin"><i class="fab fa-linkedin"></i></a>
+										</li>
+										<li>
+											<a href="https://www.linkedin.com/sharing/share-offsite/?url=@encodedUrl" target="_blank" rel="noopener noreferrer nofollow" title="Share on Linkedin"><i class="fab fa-linkedin"></i></a>
+										</li>
+										<li>
+											<a href="#" id="copyLinkButton" title="Copy Link"><i class="fas fa-copy"></i></a>
+											<input type="text" id="linkInput" value="@currentUrl" readonly style="display: none;">
+										</li>
+
 									</ul>
 								</div> <!-- /.social-buttons -->
 							</div>
@@ -582,12 +621,22 @@
 									<div class="tt-bp-nav-text"><span><i class="fas fa-angle-left"></i></span>Previous Post</div>
 									<h4 class="tt-bp-nav-title"><a href="@Url.Action("index", "storydetail", new { id = previousId })">Previous Post Title</a></h4>
 								}
+								else
+								{
+									<div class="tt-bp-nav-text"><span></span>Əvvəlki Post Movcud Deyil</div>
+
+								}
 							</div>
 							<div class="tt-bp-nav-col tt-bp-nav-right">
 								@if (nextId > 0 && nextId <= ViewBag.LastPostId)
 								{
 									<div class="tt-bp-nav-text">Next Post<span><i class="fas fa-angle-right"></i></span></div>
 									<h4 class="tt-bp-nav-title"><a href="@Url.Action("index", "storydetail", new { id = nextId })">Next Post Title</a></h4>
+								}
+								else
+								{
+									<div class="tt-bp-nav-text"><span></span>Sonrakı Post Movcud Deyil</div>
+
 								}
 							</div>
 						</div>
@@ -924,6 +973,16 @@
 	</div>
 	<!-- End scroll container -->
 
+	<script>
+		document.getElementById("copyLinkButton").addEventListener("click", function () {
+			var linkInput = document.getElementById("linkInput");
+			linkInput.style.display = "block";
+			linkInput.select();
+			document.execCommand("copy");
+			linkInput.style.display = "none";
+			alert("Link copied to clipboard!");
+		});
+	</script>
 
 
 

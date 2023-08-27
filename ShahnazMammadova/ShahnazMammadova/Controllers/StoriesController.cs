@@ -29,10 +29,10 @@ namespace ShahnazMammadova.Controllers
 					c.NameRu.ToLower().Trim().Contains(query.ToLower().Trim()) ||
 					c.NameEng.ToLower().Trim().Contains(query.ToLower().Trim())
 				).ToList();
-				IEnumerable<Story> paginationsearch = search.Skip((page - 1) * 1).Take(1);
+				IEnumerable<Story> paginationsearch = search.Skip((page - 1) * 5).Take(5);
 				PaginationVM<Story> searchpaginationVM = new PaginationVM<Story>
 				{
-					MaxPageCount = (int)Math.Ceiling((decimal)search.Count / 1),
+					MaxPageCount = (int)Math.Ceiling((decimal)search.Count / 5),
 					CurrentPage = page,
 					Items = paginationsearch,
 					Query = query
@@ -41,10 +41,10 @@ namespace ShahnazMammadova.Controllers
 
 				return View(searchpaginationVM);
 			}
-			IEnumerable<Story> pagination = stories.Stories.Skip((page - 1) * 1).Take(1);
+			IEnumerable<Story> pagination = stories.Stories.Skip((page - 1) * 5).Take(5);
 			PaginationVM<Story> paginationVM = new PaginationVM<Story>
 			{
-				MaxPageCount = (int)Math.Ceiling((decimal)stories.Stories.Count / 1),
+				MaxPageCount = (int)Math.Ceiling((decimal)stories.Stories.Count / 5),
 				CurrentPage = page,
 				Items = pagination
 			};
