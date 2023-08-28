@@ -659,13 +659,13 @@
 												<h4 class="tt-comment-heading"><a href="#">@comments.User.UserName.ToLower()</a></h4>
 												<span class="tt-comment-time">@comments.ReviewDate.ToString("MM/dd/yyyy")</span>
 											</div>
-											<span class="tt-comment-reply"><a href="javascript:void(0);">Reply</a></span>
-											<div class="tt-comment-text">
+@* 											<span class="tt-comment-reply"><a href="javascript:void(0);">Reply</a></span>
+ *@											<div class="tt-comment-text">
 												<p>@comments.ReviewContent</p>
 											</div> <!-- /.tt-comment-text -->
 											<!-- Begin tt comments list
 											============================ -->
-											<ul class="tt-comments-list">
+											@* <ul class="tt-comments-list">
 												@foreach (var reply in comments.Replies)
 												{
 													<li class="tt-comment">
@@ -685,7 +685,7 @@
 													</li>
 
 												}
-											</ul>
+											</ul> *@
 											<!-- End tt comments list -->
 
 										</div> <!-- /.tt-comment-body -->
