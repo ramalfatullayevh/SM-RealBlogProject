@@ -11,9 +11,9 @@ namespace ShahnazMammadova.Controllers
 	public class BlogDetailController : Controller
 	{
 		readonly AppDBContext _context;
-		readonly UserManager<User> _userManager;
+		readonly UserManager<AppUser> _userManager;
 
-		public BlogDetailController(AppDBContext context, UserManager<User> userManager)
+		public BlogDetailController(AppDBContext context, UserManager<AppUser> userManager)
 		{
 			_context = context;
 			_userManager = userManager;

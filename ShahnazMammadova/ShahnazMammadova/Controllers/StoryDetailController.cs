@@ -11,9 +11,9 @@ namespace ShahnazMammadova.Controllers
 	public class StoryDetailController : Controller
 	{
 		readonly AppDBContext _context;
-		readonly UserManager<User> _userManager;
+		readonly UserManager<AppUser> _userManager;
 
-		public StoryDetailController(AppDBContext context, UserManager<User> userManager)
+		public StoryDetailController(AppDBContext context, UserManager<AppUser> userManager)
 		{
 			_context = context;
 			_userManager = userManager;

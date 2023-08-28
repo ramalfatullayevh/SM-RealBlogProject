@@ -4,11 +4,11 @@ using ShahnazMammadova.Models;
 
 namespace ShahnazMammadova.DataAccessLayer.Context
 {
-	public class AppDBContext:IdentityDbContext<User>
+	public class AppDBContext:IdentityDbContext<AppUser>
 	{
 		public AppDBContext(DbContextOptions<AppDBContext> options) : base(options) { }
 
-		public DbSet<User> Users { get; set; }	
+		public DbSet<AppUser> AppUser { get; set; }	
 		public DbSet<Category> Categories { get; set; }	
 		public DbSet<Blog> Blogs { get; set; }	
 		public DbSet<Story> Stories { get; set; }	
@@ -16,6 +16,8 @@ namespace ShahnazMammadova.DataAccessLayer.Context
 		public DbSet<Contact> Contacts { get; set; }	
 		public DbSet<BlogComment> BlogComments { get; set; }	
 		public DbSet<StoryComment> StoryComments { get; set; }	
+		public DbSet<Mail> Mails { get; set; }	
+		public DbSet<UserMail> UserMails { get; set; }	
 
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)

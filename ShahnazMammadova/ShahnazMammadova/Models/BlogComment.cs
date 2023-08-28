@@ -14,7 +14,7 @@ namespace ShahnazMammadova.Models
 
 		public string UserId { get; set; }
 
-		public User? User { get; set; }
+		public AppUser? User { get; set; }
 
 
 		public int BlogId { get; set; }

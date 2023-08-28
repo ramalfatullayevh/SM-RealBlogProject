@@ -8,9 +8,9 @@ namespace ShahnazMammadova.Controllers
 {
 	public class ChangePassword : Controller
 	{
-		readonly UserManager<User> _usermanager;
+		readonly UserManager<AppUser> _usermanager;
 
-		public ChangePassword(UserManager<User> usermanager)
+		public ChangePassword(UserManager<AppUser> usermanager)
 		{
 			_usermanager = usermanager;
 		}

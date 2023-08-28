@@ -9,8 +9,8 @@ namespace ShahnazMammadova.Controllers
 	public class ContactController : Controller
 	{
 		readonly AppDBContext _context;
-		readonly UserManager<User> _userManager;
-		public ContactController(AppDBContext context, UserManager<User> userManager)
+		readonly UserManager<AppUser> _userManager;
+		public ContactController(AppDBContext context, UserManager<AppUser> userManager)
 		{
 			_context = context;
 			_userManager = userManager;

@@ -13,7 +13,7 @@ builder.Services.AddDbContext<AppDBContext>(opt =>
 	opt.UseSqlServer(builder.Configuration.GetConnectionString("Connection"));
 });
 
-builder.Services.AddIdentity<User, IdentityRole>(opt =>
+builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 {
 	opt.Password.RequireNonAlphanumeric = false;
 	opt.Password.RequireDigit = true;
@@ -21,7 +21,7 @@ builder.Services.AddIdentity<User, IdentityRole>(opt =>
 	opt.Lockout.AllowedForNewUsers = false;
 	opt.User.AllowedUserNameCharacters = "aAbBcCdDeEəƏIğĞüÜöÖçÇşŞfFgGhHiİjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ1234567890";
 	opt.User.RequireUniqueEmail = true;
-}).AddDefaultTokenProviders().AddTokenProvider<DataProtectorTokenProvider<User>>(TokenOptions.DefaultProvider).AddEntityFrameworkStores<AppDBContext>();
+}).AddDefaultTokenProviders().AddTokenProvider<DataProtectorTokenProvider<AppUser>>(TokenOptions.DefaultProvider).AddEntityFrameworkStores<AppDBContext>();
 
 var app = builder.Build();
 

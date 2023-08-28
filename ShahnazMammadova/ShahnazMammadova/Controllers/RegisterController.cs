@@ -8,11 +8,11 @@ namespace ShahnazMammadova.Controllers
 {
 	public class RegisterController : Controller
 	{
-		readonly UserManager<User> _userManager;
-		readonly SignInManager<User> _signInManager;
+		readonly UserManager<AppUser> _userManager;
+		readonly SignInManager<AppUser> _signInManager;
 		readonly RoleManager<IdentityRole> _roleManager;
 
-		public RegisterController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<IdentityRole> roleManager)
+		public RegisterController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
 		{
 			_userManager = userManager;
 			_signInManager = signInManager;
@@ -31,7 +31,7 @@ namespace ShahnazMammadova.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Index(RegisterVM registerVM)
 		{
-			var username = registerVM.Name.ToLower() + registerVM.Surname.ToLower();
+			var username = (registerVM.Name.ToLower().Trim() + registerVM.Surname.ToLower().Trim()).Trim();
 			if (!ModelState.IsValid) return View(registerVM);
 			var user = await _userManager.FindByNameAsync(username);
 			if (user is not null)
@@ -46,7 +46,7 @@ namespace ShahnazMammadova.Controllers
 				ModelState.AddModelError("Email", "This Email address is already in use");
 				return View(registerVM);	
 			}
-			user = new User
+			user = new AppUser
 			{
 				Name = registerVM.Name,
 				Surname = registerVM.Surname,	
