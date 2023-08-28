@@ -2,6 +2,7 @@
 
 namespace ShahnazMammadova.Controllers
 {
+	
 	public class CartController : Controller
 	{
 		public IActionResult Index()

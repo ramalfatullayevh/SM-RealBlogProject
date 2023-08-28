@@ -7,47 +7,20 @@
 
 <main id="body-inner">
         <div id="content-wrap">
-
-
-            <!-- *************************************
-            *********** Begin page content ***********
-            ************************************** -->
             <div id="page-content">
-
-
-                <!-- ============================================================
-                ///// Begin portfolio hover carousel (full screen carousel) /////
-                =================================================================
-                * IMPORTANT: The portfolio hover carousel is a standalone element. Do not add other template elements to this page!!!
-                * Use class "cursor-drag-mouse-down" to enable cursor drag style on mouse down (data-simulate-touch attribute must be enabled).
-                * Available data attributes:
-                        data-loop="true"......................(true/false)
-                        data-simulate-touch="true"............(true/false)
-                        data-grab-cursor="true"...............(true/false)
-                -->
                 <div class="tt-portfolio-hover-carousel cursor-drag-mouse-down" data-loop="true" data-simulate-touch="true" data-grab-cursor="true">
-
-                    <!-- Begin swiper container -->
                     <div class="swiper">
-
-                        <!-- Begin swiper wrapper (required) -->
                         <div class="swiper-wrapper">
                             @foreach (var sliders in Model)
                             {
                                 <div class="swiper-slide" data-slide="@sliders.Id">
-                                    <!-- Begin portfolio hover carousel item
-                                    ========================================= -->
                                     <a href="#" class="tt-phc-item"  data-cursor="View<br>Project">
-                                        <h2 class="tt-phc-item-title">@sliders.NameAz</h2> <!-- You may need to adjust the font size to suit your needs. -->
+                                        <h2 class="tt-phc-item-title">@sliders.NameAz</h2> 
                                         <div class="tt-phc-categories">
                                             <div class="tt-phc-category">@sliders.Category.NameAz</div>
-                                            <!-- <div class="tt-phc-category">Varia</div> -->
-                                        </div> <!-- /.tt-phc-categories -->
+                                        </div> 
                                     </a>
-                                    <!-- End portfolio hover carousel item -->
-
                                 </div>
-                              
                             }
                         </div>
                     </div>
@@ -68,42 +41,12 @@
                                     <div class="phc-image cover-opacity-4" data-slide="@sliders.Id">
                                         <img src="~/user/assets/sliderimg/@sliders.ImageUrl" alt="image">
                                     </div>
-
                                 </div>
                             }
                         }
-                        
                     </div>
                 </div>
             </div>
-            <footer id="tt-footer" class="footer-absolute">
-                <div class="tt-footer-inner">
-                    <div class="footer-col tt-align-center-left">
-                        <div class="footer-col-inner">
-                            <div class="tt-btn tt-btn-link">
-                                <a href="contact.html" data-hover="Get in Touch">Get in Touch</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-col tt-align-center-right">
-                        <div class="footer-col-inner">
-
-                            <div class="footer-social">
-                                <div class="footer-social-text"><span>Follow</span><i class="fas fa-share-alt"></i></div>
-                                <div class="social-buttons">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/themetorium" class="magnetic-item" target="_blank" rel="noopener">Fb.</a></li>
-                                        <li><a href="https://twitter.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Tw.</a></li>
-                                        <li><a href="https://www.youtube.com/" class="magnetic-item" target="_blank" rel="noopener">Yt.</a></li>
-                                        <li><a href="https://dribbble.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Dr.</a></li>
-                                        <li><a href="https://www.behance.net/Themetorium" class="magnetic-item" target="_blank" rel="noopener">Be.</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     </div>
 </main>
