@@ -50,8 +50,8 @@
                                         <td><img src="~/user/assets/storyimg/@story.FirstImageUrl" width="70px" height="70px" /></td>
                                         <td><img src="~/user/assets/storyimg/@story.SecondImageUrl" width="70px" height="70px" /></td>
                                         <td>@story.NameAz</td>
-                                        <td>@story.CreatedTime.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
-                                        <td>@story.UpdatedTime?.ToString( "MM/dd/yyyy hh:mm:ss tt" )</td>
+                                        <td>@story.CreatedTime.ToString( "MM/dd/yyyy" )</td>
+                                        <td>@story.UpdatedTime?.ToString( "MM/dd/yyyy" )</td>
                                         <td>@story.Category.NameAz</td>
                                         <td>
                                             <a class="btn btn-success margin-top-10" asp-controller="story" asp-action="update" asp-route-id=@story.Id data-bs-original-title="" title=""> <span class="icon-pencil-alt"></span></a>

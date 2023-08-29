@@ -44,8 +44,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Email/Arrivals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcRW1haWxcQXJyaXZhbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Email/CreateMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcRW1haWxcQ3JlYXRlTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Email/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcRW1haWxcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/MailDetail/ArrivalDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcc2hhaG5hem1cVmlld3NcTWFpbERldGFpbFxBcnJpdmFsRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ramal/Desktop/SM-RealBlogProject/ShahnazMammadova/ShahnazMammadova/Areas/shahnazm/Views/Shared/_Layout.cshtml]

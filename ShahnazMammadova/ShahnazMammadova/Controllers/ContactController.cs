@@ -35,7 +35,8 @@ namespace ShahnazMammadova.Controllers
 					Name = vM.Name,
 					Email = vM.Email,	
 					Subject = vM.Subject,
-					Message = vM.Message,	
+					Message = vM.Message,
+					IsRead = false
 				};
 			}
 			else 
@@ -47,7 +48,8 @@ namespace ShahnazMammadova.Controllers
 					Email = user.Email,
 					Subject = vM.Subject,
 					Message = vM.Message,
-				};
+                    IsRead = false
+                };
 			}
 			await _context.Contacts.AddAsync(contact);	
 			await _context.SaveChangesAsync();

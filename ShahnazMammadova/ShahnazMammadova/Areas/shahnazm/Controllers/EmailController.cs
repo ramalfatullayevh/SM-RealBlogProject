@@ -22,10 +22,10 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
             _userManager = userManager;
         }
 
-        public async Task<IActionResult> AllMails()
+        public async Task<IActionResult> Arrivals()
         {
-            var mails = await _context.Mails.Include(m=>m.UserMail).ThenInclude(m=>m.User).OrderBy(m=>m.CreateDate).ToListAsync(); 
-            return View(mails);
+            var contacts = await _context.Contacts.OrderByDescending(x => x.CreatedDate).ToListAsync();
+            return View(contacts);
         }
 
 
@@ -34,7 +34,7 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
         {
             ViewBag.Users = new SelectList(_context.AppUser.Where(u => u.IsSubscribed == true), nameof(AppUser.Id), nameof(AppUser.Email));
 
-            return View();  
+            return View();
         }
 
 
@@ -84,5 +84,27 @@ namespace ShahnazMammadova.Areas.shahnazm.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id is null) return BadRequest();
+            var contact = await _context.Contacts.FirstOrDefaultAsync(x => x.Id == id);
+            if (contact is null) return NotFound();
+            var contactVM = new Contact
+            {
+                Email = contact.Email,
+                Name = contact.Name,
+                Subject = contact.Subject,
+                Message = contact.Message,
+                CreatedDate = contact.CreatedDate,
+                IsRead = true
+            };
+
+            return View(contactVM); 
+        }
     }
 }
+
+
+
