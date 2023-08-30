@@ -4,7 +4,7 @@
     Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
 }
 
-@model Contact
+@model ContactVM
 <div class="container-fluid">
     <div class="email-wrap" style="margin-left:300px; margin-top:20px">
         <div class="row" style="width:50%; height:50%">
@@ -23,13 +23,14 @@
                                                 </div>
                                             </div>
                                             <div class="emailread-group">
-                                                <textarea class="form-control" rows="6" style="width:100%" placeholder="write about your nots" name="text"></textarea>
+                                                <form method="post" asp-action="detail" asp-controller="email">
+                                                 <textarea class="form-control" rows="6"  placeholder="write about your nots" asp-for="Reply"></textarea>
                                                 <div class="action-wrapper">
                                                     <ul class="actions">
-                                                        <li><a class="btn btn-primary" href="javascript:void(0)"><i class="fa fa-reply me-2"></i>Reply</a></li>
-                                                        <li><a class="btn btn-danger" href="javascript:void(0)"><i class="fa fa-remove me-2"></i>Delete</a></li>
+                                                        <li><button class="btn btn-primary" type="submit" asp-action="detail" asp-controller="email"><i class="fa fa-reply me-2"></i>Reply</button></li>
                                                     </ul>
                                                 </div>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>

@@ -13,5 +13,7 @@ namespace ShahnazMammadova.Models
 
         public bool IsRead { get; set; }
 
+        public string? Reply { get; set; }
+
     }
 }

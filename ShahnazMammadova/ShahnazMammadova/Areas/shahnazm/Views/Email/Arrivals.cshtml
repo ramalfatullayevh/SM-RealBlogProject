@@ -54,8 +54,14 @@
                                         {
                                             <div class="media">
                                                 <div class="media-body">
-                                                    <h6><a asp-controller="email" asp-action="arrivesdetail" asp-route-id="@contact.Id">@contact.Email</a></h6>
-                                                    <p>@contact.Message</p><span>@contact.CreatedDate.ToString( "MM/dd/yyyy" )</span>
+                                                    <a  class="btn btn-danger" asp-action="delete" asp-controller="email" asp-route-id="@contact.Id"><i class="fa fa-trash"></i></a>
+                                                    <h6><a style="margin-left:20px" asp-controller="email" asp-action="detail" asp-route-id="@contact.Id">@contact.Email</a></h6>
+                                                    @if (contact.IsRead)
+                                                    {
+                                                         <p style="margin-left:75px" class="text-danger">(oxunub)</p>
+                                                    }
+                                                    <span>@contact.CreatedDate.ToString( "MM/dd/yyyy" )</span>
+
                                                 </div>
                                             </div>
                                         }

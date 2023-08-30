@@ -1,0 +1,77 @@
+﻿
+@{
+    ViewData["Title"] = "Sents";
+    Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
+}
+
+@model ICollection<Mail>
+<div class="page-body">
+    <div class="container-fluid">
+        <div class="page-header">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Email Application</h3>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item">Apps   </li>
+                        <li class="breadcrumb-item">Email</li>
+                        <li class="breadcrumb-item active">Email App</li>
+                    </ol>
+                </div>
+                <div class="col-sm-6">
+                    <!-- Bookmark Start-->
+                    <div class="bookmark">
+                        <ul>
+                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Tables"><i data-feather="inbox"></i></a></li>
+                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Chat"><i data-feather="message-square"></i></a></li>
+                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Icons"><i data-feather="command"></i></a></li>
+                            <li><a href="javascript:void(0)" data-container="body" data-bs-toggle="popover" data-placement="top" title="" data-original-title="Learning"><i data-feather="layers"></i></a></li>
+                            <li>
+                                <form class="form-inline search-form">
+                                    <div class="form-group form-control-search">
+                                        <input type="text" placeholder="Search..">
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Bookmark Ends-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+        <div class="email-wrap">
+            <div class="row">
+                <div class="col-xl-12 col-md-12">
+                    <div class="email-right-aside">
+                        <div class="card email-body">
+                            <div class="email-profile">
+                                <div>
+                                    <div class="pe-0 b-r-light"></div>
+                                    <div class="inbox">
+                                        @foreach (var contact in Model)
+                                        {
+                                            @foreach (var item in contact.UserMail)
+                                            {
+                                                <div class="media">
+                                                    <div class="media-body">
+                                                        <a class="btn btn-danger" asp-action="sentdelete" asp-controller="email" asp-route-id="@contact.Id"><i class="fa fa-trash"></i></a>
+                                                        <h6><a style="margin-left:20px" asp-controller="email" asp-action="sentdetail" asp-route-id="@contact.Id">@item.User.Email</a></h6>
+                                                        <span>@contact.CreateDate.ToString( "MM/dd/yyyy" )</span>
+                                                    </div>
+                                                </div>
+                                            }
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container-fluid Ends-->
+</div>

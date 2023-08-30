@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "SentDetail";
+    Layout = "~/Areas/shahnazm/Views/Shared/_Layout.cshtml";
+}
+
+@model Mail
+<div class="container-fluid">
+    <div class="email-wrap" style="margin-left:300px; margin-top:20px">
+        <div class="row" style="width:50%; height:50%">
+            <div class="col-xl-12 col-md-12">
+                <div class="email-right-aside">
+                    <div class="card email-body">
+                        <div class="email-profile">
+                            <div class="email-right-aside">
+                                <div class="email-body">
+                                    <div class="email-content">
+                                        <div class="email-wrapper">
+                                            <div class="emailread-group">
+                                                <div class="read-group">
+                                                    <h5>@Model.MailSubject</h5>
+                                                    <p>@Model.MailMessage</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

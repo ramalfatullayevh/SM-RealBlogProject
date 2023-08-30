@@ -4,7 +4,8 @@ namespace ShahnazMammadova.ViewModels
 {
 	public class ContactVM
 	{
-		[Required, MinLength(3), MaxLength(15)]
+        public int Id { get; set; }
+        [Required, MinLength(3), MaxLength(15)]
 		public string Name { get; set; }
 		[Required, DataType(DataType.EmailAddress)]
 		public string Email { get; set; }
@@ -13,5 +14,7 @@ namespace ShahnazMammadova.ViewModels
 		[Required, MinLength(5), MaxLength(5000)]
 		public string Message { get; set; }
 		public DateTime CreatedDate { get; set; }
+
+		public string? Reply { get; set; }
 	}
 }
