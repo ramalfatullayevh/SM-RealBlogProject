@@ -37,7 +37,7 @@ namespace ShahnazMammadova.Controllers
 			if (user is not null)
 			{
 				var random = new Random();
-				var randomnumber = random.Next(100000000, 999999999);
+				var randomnumber = random.Next(100000, 999999);
 				username = username + randomnumber;
 			}
 			var email = await _userManager.FindByEmailAsync(registerVM.Email);
@@ -53,6 +53,7 @@ namespace ShahnazMammadova.Controllers
 				UserName = username,	
 				Email = registerVM.Email,
 				IsSubscribed = registerVM.IsSubscribed,	
+				UserDate = DateTime.Now,	
 			};
 			var result = await _userManager.CreateAsync(user, registerVM.Password);
 			if (!result.Succeeded)

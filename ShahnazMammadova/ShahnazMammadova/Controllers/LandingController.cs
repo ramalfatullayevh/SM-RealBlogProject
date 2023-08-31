@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShahnazMammadova.DataAccessLayer.Context;
-using ShahnazMammadova.Models;
 using ShahnazMammadova.ViewModels;
 
 namespace ShahnazMammadova.Controllers
